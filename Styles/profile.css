@@ -1,0 +1,466 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: #FAFAFA !important;
+}
+
+
+.account_info{
+    position: relative;
+    top: 200px;
+}
+
+.account_name_cover_username{
+    width: 370px;
+    height: 189px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(246, 246, 246, 0) 100%);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    margin: 0 auto;
+    border-radius: 19px;
+}
+
+.account_cover{
+    width: 124px;
+    height: 124px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    top: -62px;
+}
+
+.account_cover img{
+    height:100%;
+    border-radius: 50%;
+}
+
+.name_and_exit{
+    margin-top: -20px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name_of_user{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 24px;
+    /* identical to box height, or 67% */
+
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #121212;
+
+}
+button{
+   position: relative;
+   top: 3px;
+}
+
+.username p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+    margin-top: 13px;
+    text-align: center;
+
+    color: #9B9DA1;
+}
+
+.info_statics{
+    width: 370px;
+    height: 228px;
+    background-color: #FFFFFF;
+    background: #FFFFFF;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding-top: 58px;
+    padding-left: 50px;
+}
+
+.info_statics__header{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.03em;
+
+    color: #9B9DA1;
+
+}
+
+.in_dollars{
+    margin-top: 20px;
+    display: flex;
+    max-width: 292px;
+}
+
+.in_dollars_header{
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    /* identical to box height, or 100% */
+    
+    letter-spacing: -0.03em;
+    
+    color: #121212;
+    
+}
+
+.in_dollar_dollars_static{
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */        
+    color: #9B9DA1;
+
+}
+
+.to_do{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.to_do_text{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+    margin-left: 6px;
+
+    color: #0057FF !important;
+
+}
+
+.my_referals__row{
+    display: flex;
+    gap: 10.5px;
+    align-items: center;
+
+}
+
+.my_referals__row img{
+    margin-left: 10.5px;
+}
+
+.referal_statics{
+    padding-top: 54px;
+}
+
+.account_info__row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+}
+
+
+
+
+.modal-design1{
+    position:fixed;
+width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    visibility:hidden;
+    opacity:0;
+    height: 100%;
+    transition:all 0.3s;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(25px);
+    z-index: 600;
+    color:#fff;
+
+  }
+  
+  .modal-design1:target{
+  visibility:visible;
+    opacity:1;
+
+    transition:all 0.3s;
+  }
+  
+  .close-modal1{
+    background-color:#D7D7D7;
+    width: 24px;
+    height: 24px;
+    color:#fff;
+    box-sizing: border-box;
+    padding-left: 7px;
+    right: 30px;
+    font-size:18px;
+    top: 30px;
+    position: absolute;
+    text-decoration:none;
+    border-radius: 50%;
+    color:#fff;
+  }
+
+  .referal_program{
+      width: 570px;
+      height: 726px;
+      background-color: white;
+      border-radius: 55px;
+      padding-left: 72px;
+      overflow-y: auto;
+
+      position: relative;
+      box-sizing: border-box;
+  }
+
+
+  .modal-design{
+    position:fixed;
+width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    visibility:hidden;
+    opacity:0;
+    height: 100vh;
+
+    transition:all 0.3s;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(25px);
+    z-index: 400;
+    color:#fff;
+
+  }
+  
+  .modal-design:target{
+  visibility:visible;
+    opacity:1;
+
+    transition:all 0.3s;
+  }
+  
+  .close-modal{
+    background-color:#D7D7D7;
+    width: 24px;
+    height: 24px;
+    color:#fff;
+    box-sizing: border-box;
+    padding-left: 7px;
+    right: 30px;
+    font-size:18px;
+    top: 30px;
+    position: absolute;
+    text-decoration:none;
+    border-radius: 50%;
+    color:#fff;
+  }
+
+  .referal_program_header{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    /* identical to box height, or 112% */
+    
+    letter-spacing: -0.03em;
+
+    margin-top: 70px;
+
+    
+    color: #121212;
+    
+  }
+
+  .referal_program_sub{
+      max-width:390px ;
+      font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 153% */
+
+
+        margin-top: 20px;
+    color: #9B9DA1;
+
+  }
+
+  .my_referal_count{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    
+    letter-spacing: -0.03em;
+    
+    color: #121212; 
+    margin-bottom: 10px;
+    margin-top: 30px;    
+  }
+
+  .referal_name{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+    
+    
+    color: #121212;
+  }
+
+  .referal_username{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+    margin-top: 5px;
+    
+    color: #9B9DA1;
+
+  }
+
+  .referal_img{
+      width: 53px;
+      height: 53px; 
+      background-color: #F0F0F0;
+      border-radius: 50%;
+  }
+
+  .referal_referal_box{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .referal_referal_box{
+      margin-top: 20px;
+  }
+
+
+  .referal_program::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+
+  .referrans_pluse{
+    transition: 0.5s;
+  }
+
+  .referrans_pluse:hover{
+      fill: #0057FF;
+      transition: 0.5s;
+  }
+
+  @media(max-width:1150px){
+    .account_info__row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 41px;
+    }
+
+    .info_statics{
+        margin-top: 20px;
+    }
+}
+
+
+  @media(max-width:580px){
+    .referal_program{
+        width: 90%;
+        height: 100%;
+        padding-bottom: 20px;
+        background-color: white;
+        border-radius: 55px;
+        padding-left: 32px;
+        padding-right: 30px;
+        overflow-y: auto;
+  
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .referal_program_header{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 36px;
+        /* identical to box height, or 112% */
+        width: 207px;
+        letter-spacing: -0.03em;
+    
+        margin-top: 30px;
+    
+        
+        color: #121212;
+        
+      }
+    
+      .referal_program_sub{
+          max-width:390px ;
+          font-weight: 400;
+        font-size: 15px;
+        line-height: 23px;
+        /* or 153% */
+        
+    
+            margin-top: 20px;
+        color: #9B9DA1;
+    
+      }
+    
+      .my_referal_count{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        /* identical to box height, or 100% */
+        
+        letter-spacing: -0.03em;
+        
+        color: #121212; 
+        margin-bottom: 10px;
+        margin-top: 30px;    
+      }
+    
+      .referal_name{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 15px;
+        /* identical to box height, or 100% */
+        
+        
+        color: #121212;
+      }
+    
+      .referal_username{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        /* identical to box height, or 100% */
+        margin-top: 5px;
+        
+        color: #9B9DA1;
+    
+      }
+  
+  }
+
+ 
+@media(max-width:390px){
+
+    .info_statics{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .account_name_cover_username{
+        width: 100%;
+    }
+}

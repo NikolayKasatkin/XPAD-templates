@@ -1,0 +1,757 @@
+*{
+    margin:0%;
+    padding: 0%;
+    font-family: 'Inter' sans-serif;
+
+}
+
+
+/* Hide default radio style */
+.checkbox-input {
+  opacity: 0;
+  visibility: hidden;
+  margin: 0;
+}
+
+.checkbox-input_2{
+    opacity: 0;
+  visibility: hidden;
+  margin: 0;
+}
+
+/* Change icon, border and text color when radio is checked */
+.checkbox-input_2:checked + .checkbox-tile_2,
+.checkbox-input_2:checked + .checkbox-tile_2 span {
+border: none;
+  color: #121212 !important;
+
+  background-color: white;
+}
+
+.checkbox-input:checked + .checkbox-tile,
+.checkbox-input:checked + .checkbox-tile span {
+border: none;
+
+  color: #121212 !important;
+  background-color: white;
+}
+
+.checkbox{
+    font-family: 'Inter', sans-serif;
+}
+
+/* Checkbox display */
+.checkbox-input_2:checked + .checkbox-tile_2::before {
+  position: absolute;
+  transform: scale(1);
+  top: 27px;
+  opacity: 1;
+  width: 21px;
+
+  height: 21px; 
+  left: 30px;
+  background:url(../IMG/elipse_checbox.png);
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  border: 1px solid #0057FF;
+}
+
+.checkbox-input:checked + .checkbox-tile::before {
+    position: absolute;
+    transform: scale(1);
+    top: 27px;
+    opacity: 1;
+    width: 21px;
+  
+    height: 21px; 
+    left: 30px;
+    background:url(../IMG/elipse_checbox.png);
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    border: 1px solid #0057FF;
+  }
+
+/* Checkbox icon and text */
+.checkbox-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 233px;
+  height: 133px;
+  background-color: #FAFAFA;
+  transition: 0.1s ease;
+  color: #9B9DA1;
+  cursor: pointer;
+  border: 1px solid #ECECEC;
+   border-radius: 28px;
+  position: relative;
+}
+
+.checkbox-tile_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    width: 130px;
+    height: 78px;
+    background-color: #FAFAFA;
+    transition: 0.1s ease;
+    color: #9B9DA1;
+    cursor: pointer;
+    border: 1px solid #ECECEC;
+     border-radius: 28px;
+    position: relative;
+  }
+  
+
+/*
+.checkbox-tile:hover {
+  border-color: #999;
+}
+
+*/
+
+
+/* Checkmark (icon inside checker) */
+.checkbox-tile::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: scale(1);
+  top: 27px;
+  opacity: 1;
+  width: 21px;
+  height: 21px; 
+  left: 30px;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  padding: 6px;
+  border-radius: 50%;
+
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.25s ease;
+
+
+}
+
+.checkbox-tile_2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: scale(1);
+    top: 27px;
+    opacity: 1;
+    width: 21px;
+    height: 21px; 
+    left: 30px;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    padding: 6px;
+    border-radius: 50%;
+  
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.25s ease;
+  
+  
+  }
+
+  .main_stale_2{
+      position: absolute !important;
+      top: 15px !important;
+      left: 60px !important;
+      width: 29px !important;
+
+  }
+
+  .widthloss{
+      width: 290px;
+  }
+
+/* Not important */
+
+.chesboxs{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.checbox_header{
+    font-weight: 500;
+
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+    font-family: 'Inter', sans-serif;
+
+    color: #121212;
+
+}
+
+
+.main_stile{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    position: relative;
+    top: 5px;
+    margin-top: 12px;
+    width: 170px;
+/* or 147% */
+}
+
+
+.header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 47px;
+    margin-top: 33px;
+    top:0px;
+    left: 0px;
+    z-index: 2;
+    
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+
+.youtube_cointa {
+    margin-top: 0px;
+}
+
+
+
+
+
+body{
+    background-color: #FAFAFA;
+}
+
+
+.logo{
+    padding-left: 53px;
+}
+
+.whitepaper_box{
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrapperss{
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+.whitpaper_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.white__text a{
+    text-decoration: none;
+    color: black;
+}
+
+.whitepaper_box img{
+    width: 27px;
+    height: 26px;
+}
+
+.lungage__i{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.white__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whitepaper_box h2{
+    font-family: "iNTER Medium"; 
+    font-size: 16px;
+
+}
+
+.nav_menu__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 420px;
+    padding-right: 53px;
+}
+
+.language{
+    display: flex;
+    justify-content: baseline;
+}
+
+.language img{
+    width: 10.5px;
+    height: 7.5px;
+}
+
+.language h2{
+    font-family: "iNTER Medium"; 
+   font-size: 20px;
+}
+
+
+.language img{
+    width: 10.5px;
+    height: 7.5px;
+
+}
+
+
+.connect{
+    width: 157.5px;
+    height: 50.7px;
+   background-color: #0075FF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius:30px;
+
+
+}
+
+.connect h2{
+    font-family: "iNTER Medium";
+    font-size: 16px;
+    color: white;
+}
+
+
+.name_of_project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.wrapper{
+    width: 780px;
+
+}
+
+.name_of_project  input{
+    width: 100%;
+    margin-top: 20px;
+    height: 63px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 31.5px;
+    box-sizing: border-box;
+}
+
+
+.name_of_project label{
+    font-size: 15px;
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+/* identical to box height, or 100% */
+
+
+color: #121212;
+
+   
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.files{
+    height: 350px;
+    width: 100%;
+    opacity: 0%;
+    background-color: white;
+}
+
+.upload_photo_1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 28px;
+    
+
+}
+
+input[type="file"]{
+    display: none;
+}
+
+
+
+.upload_photo__row label{
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+    
+
+    color: #121212;
+
+    height: 100%;
+}
+
+.labelik{
+ 
+    display: block;
+    color: #86868B;
+}
+
+
+.labe_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+textarea .text1{
+    width: 780px;
+    height: 307px;
+    border-radius: 22px;
+
+}
+
+
+.text1{
+    width: 780px;
+    height: 307px;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 22px;
+
+}
+
+textarea{
+    outline: none !important;
+    background: #FFFFFF !important;
+    border: 1px solid #ECECEC !important;
+}
+
+
+
+.youtube{
+    width: 100%;
+    height: 63px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 31.5px;
+    box-sizing: border-box;
+}
+
+input {outline:none;}
+
+
+.youtube_cointa{
+    position: relative;
+}
+
+.youtube_cointa img{
+    position: absolute;
+    top:15px;
+    left: 26px;
+}
+
+.youtube_cointa input{
+    padding-left: 70px;
+}
+
+
+
+
+.text1{
+    resize: none;
+    width: 100%;
+    height: 102px;
+    font-family: 'Inter' sans-serif;
+    outline: none !important;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 31.5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.text2{
+    height: 307px;
+}
+
+.box_for_values{
+    width: 236px;
+    height: 133px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.06);
+    border-radius: 31.5px;
+    border: 0px;
+    display: block;
+}
+
+.wrapper_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_of_project_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.box_for_values input{
+    margin-top: 27px;
+    margin-left: 30px;
+    color: #0075FF;
+}
+
+.label_in_values{
+    width: 160px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 11px;
+  
+}
+
+.label_in_values label{
+    color: #86868B;
+}
+
+
+.label_in_values label{
+    width: 160px;
+    text-align: left;
+    
+    font-size: 14px;
+}
+
+
+
+.wrapper_1{
+    width: 290px;
+}
+
+.name_of_project_{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.box_for_values_1 label{
+
+    font-family: 'iNTER Semibold';
+    font-size: 14px;
+    margin-left: 5px;
+
+}
+
+
+
+.box_for_values_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 133px;
+}
+
+.input_box{
+    margin-top: 30px;
+}
+
+.button{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input{
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+textarea {
+    padding-left: 30px;
+    padding-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 22px;
+    
+}
+
+
+.button button{
+    width: 100%;
+    height: 63px;
+    background-color: #0057FF;
+    border: 0px;
+    border: 0px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+}
+
+
+.youtube{
+    display: flex;
+
+}
+
+.box_for_values input:checked + .label_in_values label{
+      color: black;
+   
+}
+
+
+.active{
+    color: black;
+}
+
+.wrapper23{
+
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+.wrapper23 p{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    /* identical to box height, or 100% */
+    
+    
+    color: #121212;
+    
+}
+
+.wrapper_box{
+    position: relative;
+    top: 140px;
+    
+    padding-bottom: 55px;
+    border-bottom: 1px solid #ECECEC;;
+}
+
+.all_inputs{
+    position: relative;
+    top: 200px;
+}
+
+
+label{
+    text-transform: none !important;
+}
+
+footer{
+    position: relative;
+    top: 250px;
+    background-color: white;
+}
+
+.banner_header{
+    font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+/* identical to box height, or 100% */
+
+
+color: #121212;
+
+}
+
+.black_placeholder::placeholder{
+    color: black;
+    font-weight: 500;
+}
+
+.baner_youtube{
+    width: 75px;
+    height: 51px;
+    position: absolute;
+    top: 1px;
+    border-right: 1px solid #EDEDED;
+}
+
+.baner_youtube img{
+    position: relative;
+    top: 22px;
+    left: 30px;
+}
+
+.youtube_baner{
+    padding-left: 100px !important; 
+}
+
+
+
+@media(min-width:1920px){
+    .special_container{
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:801px){
+    .chesboxs{
+        flex-direction: column;
+    }
+
+    .checbox_header{
+        padding-left: 20px;
+    }
+
+
+    .name_of_project input{
+        width: 100% ;
+        margin: 0 auto;
+    }
+
+    .wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .wrapper23{
+        padding-left: 10px;
+    }
+
+    
+}

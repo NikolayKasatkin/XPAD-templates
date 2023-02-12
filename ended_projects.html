@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="Styles/form.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <div class="header_logos">
+                    <div class="xpad_logo">
+                        <a href="index.html" class="header__logo_xpad">
+                            <img class="xpad_logo_img" src="img/Group 1.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="logos_line">  </div>
+
+                    <div class="xpad_logo">
+                        <a href="index.html" class="header__logo_certik">
+                            <img src="img/Certik_logo.svg" alt="">
+                        </a>
+                    </div>
+
+           
+
+                </div>
+                           
+           
+                <div class="header__burger">
+                    <div class="buy_xpp_mobile">
+                        <a href="#" class="connect_Wallet lang" key="buy_xpp_header">Купить XPP</a>
+                    </div>
+                    <div class="burger_moment">
+                        <div class="bar bars"></div>
+     
+                        <div class="bar"></div>
+                    </div>
+                    
+                </div>
+                <nav class="header__menu ">
+                    <div class="header_menu__row">
+                        <ul class="header__list">
+                            <li style="list-style: none; margin-top: 0px;">
+                                <a href="stake.html" class="header__link">Stake</a>
+                            </li>
+                            <li>
+                                <a href="projects.html" class="header__link"> Whitepaper</a>
+                            </li>
+                            <li>
+                         
+                                <!--
+                                <div class="dropdown">
+                                    <input class="text-box" type="text" placeholder="RU" readonly>
+                                    <div class="options">
+                                      <div onclick="show('EN')" id="en" class="translate"  value="en" ><button >EN</button></div>
+                                      <div onclick="show('RU')" id="ru" class="translate"  value="ru"><button  >RU</button></div>
+                                    </div>
+                                </div>
+                               
+                            <button class="header_btn" data-btn="ru">RU</button>
+                                <button class="header_btn" data-btn="en">EN</button>
+                                  -->
+                            <div class="dropdown">
+                                <p class="inputsss lang" style="color: white;" key="header_btn_ru">RU</p>
+                                <div class="options">
+                                  <div onclick="show('RU')" id="ru" class="translate" >  <button  >RU</button></div>
+                                  <div onclick="show('EN')" id="en" class="translate" > <button  >EN</button></div>
+                                </div>
+                            
+                            </div>
+                      
+                           
+                                      
+                              
+                            </li>
+                    
+                        </ul>
+                        <div class="buttons">
+                            <div class="connect_walle_link">
+                                <a href="#" class="connect_Wallet lang" key="connect_header">Подключить кошелек</a>
+                            </div>
+                         
+                            <div class="buy_xpp">
+                                <a href="#" class="connect_Wallet lang"  key="buy_xpp_header">Купить XPP</a>
+        
+                            </div>
+
+                            <div class="account_link">
+                                <a href="#openModal" class="connect_Wallet">
+                                    <img src="img/account_logo_img.svg" alt="">
+                                </a>
+        
+                            </div>
+                           
+                        </div>
+                    </div>
+                 
+                </nav>
+
+            
+
+            </div>
+        </div>
+    </header>
+
+
+       
+             
+    <div id="openModal" class="modal-design">
+        <div class="frame">
+            <a href="#" class="close-modal">x</a>
+            <div class="two_cycle">
+                <div class="first_cycle"></div>
+                <div class="second_cycle"></div>
+            </div>
+           <!-- <div class="nav">
+                <ul class"links">
+                  <li class="signin-active"><a class="btn">Sign in</a></li>
+                  <li class="signup-inactive"><a class="btn">Sign up </a></li>
+                </ul>
+              </div>
+              
+            -->
+            <div class="chacccked" ng-app ng-init="checked = false">
+                        <form class="form-signin" action="" method="get" name="form">
+                            <p class="vxod_header lang" key="vxod_login">Вход</p>
+                        <label for="username" class="lang" key="email_login">E-mail/Логин
+                        </label>
+                        <input class="form-styling" type="text" name="username" placeholder=""/>
+                        <label for="password" class="lang" key="password_login">Пароль
+                        </label>
+                        <input class="form-styling" type="password" name="password" placeholder=""/>
+                        <input type="checkbox" id="checkbox"/>
+    
+                        <div class="btn-animate">
+                            <a class="btn-signin lang" key="sign_in_login">Войти</a>
+                        </div>
+    
+                        <div class="or_">
+                            <p class="lang" key="or_login">или</p>
+                        </div>
+    
+                        <button class="button_sign_in_google">
+                            Google
+                        </button>
+    
+                        <li class="signup-inactive"><a class="btn lang" key="create_account_login">Создать аккаунт</a></li>
+                </form>
+                
+              <form class="form-signup" action="" method="get" name="form1">
+                  <p class="vxod_header lang" key="registration_login">Регистрация</p>
+                  <label for="fullname" class="lang" key="login_login">Логин
+                </label>
+                  <input class="form-styling" type="text" name="fullname" placeholder=""/>
+                  <label for="email" class="lang" key="enter_pasword">Введите пароль
+                </label>
+                  <input class="form-styling" type="text" name="email" placeholder=""/>
+                  <label for="password" class="lang" key="rewrite_password">Повторите пароль</label>
+                  <input class="form-styling" type="text" name="password" placeholder=""/>
+                
+        
+                  <a ng-click="checked = !checked" class="btn-signup lang" key="continue_login">Продолжить</a>
+                     <div class="or_">
+                            <p class="lang" key="or_login">или</p>
+                        </div>
+    
+                        <button class="button_sign_in_google">
+                            Google
+                        </button>
+                  <li class="signin-active"><a class="btn lang" key="sign_sign_up_login">Sign in</a></li>
+              </form>
+    
+    
+              <form action="" method="get" name="form1" class="form-signup_contunie">
+                <p class="vxod_header lang" key="upload_login">Загрузите фото</p>
+                <div class="upload_photo">
+                    <div class="upload_photo__row">
+                       <input type="file" id="file" accept="image/*">
+               
+                    </div>
+                    <label for="file" class="labelik">
+                        <div class="labe_img">
+                           <img src="img/Camera 1.svg">
+                        </div>
+                       
+                     </label>
+                
+                    </div>
+                <div class="buttons_and_refresh">
+                    <button class="sign_upp___ lang" key="sign_up__login">Зарегистрироваться</button>
+                    <div class="refresh_continue">
+                        <a  value="Refresh" onClick="history.go()" class="continue___ lang" key="continue_login__">Продолжить
+                        </a>
+                    </div>
+                   
+                </div>
+                            
+              </form>
+    
+              
+          
+              </div>
+        
+              
+              <div>
+             
+                <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
+              </div>
+            
+          </div>
+         
+       
+   
+
+</div>
+    <div class="src">
+        <div class="container">
+            <div class="src__row">
+                <a class="home" href="index.html">Главная</a>
+                <div class="circle_src"></div>
+                <a class="launch_app_src" href="#">Launch App</a>
+
+           
+            </div>
+              
+        </div>
+    </div>
+    <div class="lauch_apps">
+      <div class="container">
+        <div class="active_launchs_and_ended_launch">
+            <div class="src_between_sec">
+                <a class="ended_launchs_src ended_page_1 lang" href="projects.html" key="active_projects">Активные проекты</a>
+                <a class="active_launchs_src ended_page_2 lang" href="#" key="not_active_porjects">Завершенные проекты</a>
+            </div>
+
+            <div class="pribil_section">
+                <div class="pribil_header_text">
+                    <p>Прибыль:</p>
+                </div>
+                <div class="dropdown_1">
+                    <input class="text-box_1" type="text" placeholder="По убыванию" readonly>
+                    <div class="options_1">
+                      <div onclick="show1('По убыванию')" value="po_ubivaniyu" class="po_ubivanyu"><button value="po_ubivaniyu"  class="divs_options_1">По убыванию</button></div>
+                
+                      <div onclick="show1('По возрастанию')" value="po_vazrataniyu"><button  value="po_vazrataniyu"  class="divs_options_1">По возрастанию</button></div>
+                    </div>
+                </div>
+            </div>
+         
+
+      </div>
+
+      <div class="active_launchs_and_ended_launch_mob">
+        <a class="ended_launchs_src ended_page_1 lang" href="projects.html" key="active_projects_mobil">Активные</a>
+        <a class="active_launchs_src ended_page_2 lang" href="#" key="not_active_porjects_mobile">Завершенные</a>
+  </div>
+        <div class="lauch_apps__row">
+            <div class="ended_lauch_box">
+                <div class="cover_and_name">
+                    <div class="cover_of_project">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nema_of_project__ended">Metaspace</p>
+                </div>
+
+                <div class="lauch_info_of_ended">
+
+                    <div class="box__round_of_ended">
+                        <p class="round_of_ended lang" key="round_and_price_header">Раунд продаж:</p>
+                        <p class="type_round_ended">IDO</p>
+                    </div>
+
+                    <div class="price_of_token_ended">
+                        <p class="round_of_ended lang" key="round_and_price_header">Цена токена:</p>
+                        <p class="type_round_ended">0,006 USDT</p>
+                    </div>
+
+                </div>
+
+                <div class="pribil_and_sobrono">
+                    
+                    <div class="box__round_of_ended">
+                        <p class="round_of_ended lang" key="sobrono">Собрано:</p>
+                        <p class="type_round_ended lang">50 000 000 USDT</p>
+                    </div>
+
+                    <div class="price_of_token_ended">
+                        <p class="round_of_ended lang" key="keushaya_pribil">Текущая прибыль:</p>
+                        <p class="type_round_ended pribil">2.54x (254%)</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ended_lauch_box">
+                <div class="cover_and_name">
+                    <div class="cover_of_project">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nema_of_project__ended">Metaspace</p>
+                </div>
+
+                <div class="lauch_info_of_ended">
+
+                    <div class="box__round_of_ended">
+                        <p class="round_of_ended lang" key="round_and_price_header">Раунд продаж:</p>
+                        <p class="type_round_ended">IDO</p>
+                    </div>
+
+                    <div class="price_of_token_ended">
+                        <p class="round_of_ended lang"  key="price_for_token">Цена токена:</p>
+                        <p class="type_round_ended">0,006 USDT</p>
+                    </div>
+
+                </div>
+
+                <div class="pribil_and_sobrono">
+                    
+                    <div class="box__round_of_ended">
+                        <p class="round_of_ended lang" key="sobrono">Собрано:</p>
+                        <p class="type_round_ended">50 000 000 USDT</p>
+                    </div>
+
+                    <div class="price_of_token_ended">
+                        <p class="round_of_ended lang" key="keushaya_pribil">Текущая прибыль:</p>
+                        <p class="type_round_ended pribil">2.54x (254%)</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+        <div class="container mother">
+         
+             <!--<a class="linktoTop" href="#"><img src="img/linktoTop_icon.png" alt=""></a> -->  
+  
+        <div class="footer">
+            <div class="header_logos">
+                <div class="xpad_logo">
+                    <a href="#" class="header__logo_xpad">
+                        <svg width="114" height="25" viewBox="0 0 114 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.6108 7.09091L41.8107 10.8089H41.896L44.1065 7.09091H46.7113L43.3821 12.5455L46.7859 18H44.1332L41.896 14.2766H41.8107L39.5735 18H36.9315L40.3459 12.5455L36.9954 7.09091H39.6108ZM48.1708 18V7.09091H52.4748C53.3022 7.09091 54.0071 7.24893 54.5895 7.56499C55.1719 7.87749 55.6158 8.3125 55.9212 8.87003C56.2301 9.42401 56.3846 10.0632 56.3846 10.7876C56.3846 11.5121 56.2283 12.1513 55.9158 12.7053C55.6033 13.2592 55.1506 13.6907 54.5575 13.9996C53.968 14.3086 53.2543 14.4631 52.4162 14.4631H49.6729V12.6147H52.0433C52.4872 12.6147 52.853 12.5384 53.1406 12.3857C53.4318 12.2294 53.6484 12.0146 53.7905 11.7411C53.9361 11.4641 54.0089 11.1463 54.0089 10.7876C54.0089 10.4254 53.9361 10.1094 53.7905 9.83949C53.6484 9.56605 53.4318 9.35476 53.1406 9.20561C52.8494 9.05291 52.4801 8.97656 52.0327 8.97656H50.4773V18H48.1708ZM58.5033 18H56.0317L59.7977 7.09091H62.77L66.5306 18H64.059L61.3264 9.58381H61.2412L58.5033 18ZM58.3488 13.712H64.1869V15.5124H58.3488V13.712ZM71.7108 18H67.8437V7.09091H71.7428C72.8401 7.09091 73.7847 7.3093 74.5766 7.74609C75.3685 8.17933 75.9775 8.80256 76.4037 9.61577C76.8334 10.429 77.0482 11.402 77.0482 12.5348C77.0482 13.6712 76.8334 14.6477 76.4037 15.4645C75.9775 16.2812 75.365 16.908 74.566 17.3448C73.7705 17.7816 72.8188 18 71.7108 18ZM70.1501 16.0238H71.615C72.2968 16.0238 72.8703 15.9031 73.3355 15.6616C73.8042 15.4165 74.1558 15.0384 74.3902 14.527C74.6281 14.0121 74.7471 13.348 74.7471 12.5348C74.7471 11.7287 74.6281 11.07 74.3902 10.5586C74.1558 10.0472 73.806 9.67081 73.3408 9.42933C72.8756 9.18786 72.3021 9.06712 71.6203 9.06712H70.1501V16.0238ZM79.352 18.1385C79.0004 18.1385 78.6986 18.0142 78.4465 17.7656C78.1979 17.5135 78.0736 17.2116 78.0736 16.8601C78.0736 16.5121 78.1979 16.2138 78.4465 15.9652C78.6986 15.7166 79.0004 15.5923 79.352 15.5923C79.6929 15.5923 79.9912 15.7166 80.2469 15.9652C80.5026 16.2138 80.6304 16.5121 80.6304 16.8601C80.6304 17.0945 80.57 17.3093 80.4493 17.5046C80.3321 17.6964 80.1776 17.8509 79.9859 17.968C79.7941 18.0817 79.5828 18.1385 79.352 18.1385ZM82.536 18V7.09091H86.84C87.6674 7.09091 88.3723 7.24893 88.9547 7.56499C89.5371 7.87749 89.981 8.3125 90.2864 8.87003C90.5953 9.42401 90.7498 10.0632 90.7498 10.7876C90.7498 11.5121 90.5936 12.1513 90.2811 12.7053C89.9686 13.2592 89.5158 13.6907 88.9228 13.9996C88.3333 14.3086 87.6195 14.4631 86.7814 14.4631H84.0382V12.6147H86.4086C86.8525 12.6147 87.2182 12.5384 87.5059 12.3857C87.7971 12.2294 88.0137 12.0146 88.1557 11.7411C88.3013 11.4641 88.3741 11.1463 88.3741 10.7876C88.3741 10.4254 88.3013 10.1094 88.1557 9.83949C88.0137 9.56605 87.7971 9.35476 87.5059 9.20561C87.2147 9.05291 86.8453 8.97656 86.3979 8.97656H84.8425V18H82.536ZM92.248 18V7.09091H96.5519C97.3758 7.09091 98.0789 7.23828 98.6613 7.53303C99.2472 7.82422 99.6929 8.23793 99.9983 8.77415C100.307 9.30682 100.462 9.93359 100.462 10.6545C100.462 11.3789 100.305 12.0021 99.993 12.5241C99.6805 13.0426 99.2277 13.4403 98.6347 13.7173C98.0452 13.9943 97.3314 14.1328 96.4933 14.1328H93.6116V12.2791H96.1205C96.5608 12.2791 96.9266 12.2187 97.2178 12.098C97.509 11.9773 97.7256 11.7962 97.8676 11.5547C98.0132 11.3132 98.086 11.0131 98.086 10.6545C98.086 10.2923 98.0132 9.98686 97.8676 9.73828C97.7256 9.4897 97.5072 9.30149 97.2124 9.17365C96.9213 9.04226 96.5537 8.97656 96.1098 8.97656H94.5544V18H92.248ZM98.1393 13.0355L100.851 18H98.3044L95.6517 13.0355H98.1393ZM112.117 12.5455C112.117 13.7351 111.891 14.7472 111.44 15.5817C110.993 16.4162 110.382 17.0536 109.608 17.494C108.837 17.9308 107.971 18.1491 107.008 18.1491C106.039 18.1491 105.169 17.929 104.398 17.4886C103.628 17.0483 103.019 16.4109 102.571 15.5763C102.124 14.7418 101.9 13.7315 101.9 12.5455C101.9 11.3558 102.124 10.3438 102.571 9.50923C103.019 8.67472 103.628 8.03906 104.398 7.60227C105.169 7.16193 106.039 6.94176 107.008 6.94176C107.971 6.94176 108.837 7.16193 109.608 7.60227C110.382 8.03906 110.993 8.67472 111.44 9.50923C111.891 10.3438 112.117 11.3558 112.117 12.5455ZM109.778 12.5455C109.778 11.7749 109.663 11.125 109.432 10.5959C109.205 10.0668 108.883 9.66548 108.468 9.39205C108.052 9.11861 107.566 8.98189 107.008 8.98189C106.451 8.98189 105.964 9.11861 105.549 9.39205C105.133 9.66548 104.81 10.0668 104.579 10.5959C104.352 11.125 104.238 11.7749 104.238 12.5455C104.238 13.3161 104.352 13.9659 104.579 14.495C104.81 15.0241 105.133 15.4254 105.549 15.6989C105.964 15.9723 106.451 16.109 107.008 16.109C107.566 16.109 108.052 15.9723 108.468 15.6989C108.883 15.4254 109.205 15.0241 109.432 14.495C109.663 13.9659 109.778 13.3161 109.778 12.5455Z" fill="white"/>
+                            <g clip-path="url(#clip0_701_15)">
+                            <path d="M20.1278 4.12468C18.9433 5.1243 17.4459 6.3998 15.8447 6.96289C12.3609 8.18794 8.57392 4.82385 4.88281 4.82385L8.89013 8.90933C12.0133 12.0875 17.1226 12.0875 20.2457 8.90933L28.9894 0.0112305C24.792 0.0112308 23.2931 1.45331 20.1278 4.12468Z" fill="white"/>
+                            <path d="M8.87329 20.8856C10.0577 19.886 11.5552 18.6105 13.1564 18.0474C16.6402 16.8223 20.4272 20.1864 24.1183 20.1864L20.1109 16.1009C16.9878 12.9227 11.8784 12.9227 8.7554 16.1009L0.0117188 24.9991C4.209 24.9991 5.70794 23.557 8.87329 20.8856Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_701_15">
+                            <rect width="29" height="25" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
+                    </a>
+                </div>
+    
+                <div class="logos_line">  </div>
+    
+                <div class="xpad_logo">
+                    <a href="#" class="header__logo_certik">
+                        <img src="img/Certik_logo.svg" alt="">
+                    </a>
+                </div>
+    
+            </div>
+
+            <div class="invAndStart">
+               <a href="#" class="lang" key="fors_inventrs">Для инвесторов</a>
+               <a  href="#" class="lang" key="start_ups">Для стартапов </a>
+               <a  href="#" class="lang" key="founders">Соискателям</a>
+            </div>
+
+            <div class="whitepaper">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0641 16.6323C11.293 16.6855 11.314 16.9855 11.091 17.0598L9.77432 17.4931C6.46597 18.5598 4.72431 17.6681 3.64931 14.3598L2.58264 11.0681C1.51597 7.75977 2.39931 6.00977 5.70764 4.9431L6.1443 4.79849C6.48002 4.68732 6.80674 5.02403 6.71142 5.36459C6.66417 5.5334 6.61871 5.70957 6.57431 5.89311L5.75764 9.38479C4.84097 13.3098 6.18264 15.4765 10.1076 16.4098L11.0641 16.6323Z" fill="white"/>
+                    <path d="M14.8078 2.67395L13.4162 2.34895C10.6328 1.69062 8.97452 2.23228 7.9995 4.24895C7.7495 4.75728 7.5495 5.37395 7.38283 6.08228L6.56617 9.57391C5.7495 13.0572 6.8245 14.7739 10.2995 15.5989L11.6995 15.9322C12.1828 16.0489 12.6328 16.1239 13.0495 16.1572C15.6495 16.4072 17.0328 15.1906 17.7328 12.1822L18.5495 8.69892C19.3662 5.21562 18.2995 3.49062 14.8078 2.67395ZM13.2412 11.1072C13.1662 11.3906 12.9162 11.5739 12.6328 11.5739C12.5828 11.5739 12.5328 11.5656 12.4745 11.5572L10.0495 10.9406C9.71618 10.8572 9.51618 10.5156 9.59952 10.1822C9.68285 9.84891 10.0245 9.64891 10.3578 9.73225L12.7828 10.3489C13.1245 10.4322 13.3245 10.7739 13.2412 11.1072ZM15.6828 8.29061C15.6078 8.57391 15.3578 8.75725 15.0745 8.75725C15.0245 8.75725 14.9745 8.74891 14.9162 8.74058L10.8745 7.71562C10.5412 7.63228 10.3412 7.29062 10.4245 6.95728C10.5078 6.62395 10.8495 6.42395 11.1828 6.50728L15.2245 7.53228C15.5662 7.60728 15.7662 7.94895 15.6828 8.29061Z" fill="white"/>
+                    </svg>
+                    
+                <a href="" class="lang" key="for_investrs">Для инвесторов</a>
+            </div>
+
+            <div class="social_media_href">
+                <a href=""><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_690_490)">
+                    <path d="M12.5 0C19.1278 0 24.5 5.373 24.5 12C24.5 18.6279 19.1278 24 12.5 24C5.87217 24 0.5 18.6278 0.5 12C0.5 5.373 5.87225 0 12.5 0Z" fill="#535353"/>
+                    <path d="M20.0018 8.08415C19.4776 8.31062 18.9135 8.46287 18.3218 8.53191C18.9264 8.18013 19.3898 7.62437 19.6081 6.96068C19.0426 7.28692 18.4171 7.5232 17.7503 7.6499C17.2171 7.09867 16.4573 6.75439 15.6158 6.75439C14.0018 6.75439 12.6924 8.02417 12.6924 9.59158C12.6924 9.81435 12.7179 10.0311 12.7681 10.2389C10.3381 10.1204 8.18257 8.99012 6.74111 7.27341C6.48909 7.69267 6.34508 8.17939 6.34508 8.69989C6.34508 9.68389 6.86106 10.5539 7.6456 11.0617C7.16562 11.0467 6.71556 10.9199 6.32037 10.7062V10.7422C6.32037 12.1177 7.32834 13.2644 8.66633 13.5254C8.42108 13.59 8.16305 13.6252 7.89605 13.6252C7.7078 13.6252 7.52482 13.608 7.34629 13.5742C7.71826 14.7022 8.79831 15.5227 10.0786 15.5452C9.07737 16.3072 7.81655 16.7602 6.44634 16.7602C6.21006 16.7602 5.97757 16.7468 5.74805 16.7205C7.04328 17.526 8.57934 17.9963 10.2315 17.9963C15.6106 17.9963 18.5521 13.6703 18.5521 9.92021L18.5438 9.55275C19.1137 9.15367 19.6096 8.65421 20.0018 8.08415Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_690_490">
+                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    </a>
+                <a href=""><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_690_493)">
+                    <path d="M12.5 24C19.1274 24 24.5 18.6274 24.5 12C24.5 5.37259 19.1274 0 12.5 0C5.87259 0 0.5 5.37259 0.5 12C0.5 18.6274 5.87259 24 12.5 24Z" fill="#535353"/>
+                    <path d="M5.99028 11.7402L17.5603 7.2792C18.0972 7.08521 18.5663 7.41021 18.3923 8.22221L18.3933 8.2212L16.4232 17.5022C16.2773 18.1602 15.8863 18.3202 15.3393 18.0102L12.3393 15.7992L10.8923 17.1932C10.7323 17.3532 10.5972 17.4882 10.2873 17.4882L10.5003 14.4352L16.0603 9.41215C16.3023 9.19924 16.0063 9.07924 15.6873 9.29121L8.81629 13.6172L5.85428 12.6932C5.21129 12.4892 5.19728 12.0502 5.99028 11.7402Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_690_493">
+                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                     </a>
+                <a href=""><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.5" cy="12" r="12" fill="#535353"/>
+                    <path d="M9.4222 8C11.4999 8 13.1841 9.67272 13.1841 11.736C13.1841 13.7992 11.4998 15.4718 9.4222 15.4718C7.3446 15.4718 5.66016 13.7992 5.66016 11.736C5.66016 9.67272 7.34447 8 9.4222 8ZM15.4299 8.21884C16.4688 8.21884 17.3109 9.79336 17.3109 11.736H17.3111C17.3111 13.6781 16.4689 15.2531 15.43 15.2531C14.3912 15.2531 13.549 13.6781 13.549 11.736C13.549 9.79386 14.391 8.21884 15.4299 8.21884ZM18.3375 8.58518C18.7028 8.58518 18.9991 9.99581 18.9991 11.736C18.9991 13.4756 18.7029 14.8868 18.3375 14.8868C17.9721 14.8868 17.6761 13.476 17.6761 11.736C17.6761 9.99594 17.9722 8.58518 18.3375 8.58518Z" fill="black"/>
+                    </svg>
+                     </a>
+                <a href=""><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_690_500)">
+                    <path d="M12.5 0C5.87253 0 0.5 5.37253 0.5 12C0.5 18.6274 5.87253 23.9999 12.5 23.9999C19.1274 23.9999 24.5 18.6274 24.5 12C24.5 5.37253 19.1273 0 12.5 0ZM9.29837 17.8014H6.66365V9.28939H9.29837V17.8014ZM7.96845 8.17468C7.10798 8.17468 6.41042 7.47143 6.41042 6.60407C6.41042 5.73661 7.10808 5.03341 7.96845 5.03341C8.82883 5.03341 9.52639 5.73661 9.52639 6.60407C9.52644 7.47148 8.82887 8.17468 7.96845 8.17468ZM19.172 17.8014H16.55V13.3333C16.55 12.1078 16.0845 11.4238 15.1155 11.4238C14.0609 11.4238 13.51 12.1362 13.51 13.3333V17.8014H10.983V9.28939H13.51V10.4358C13.51 10.4358 14.2701 9.02975 16.075 9.02975C17.8799 9.02975 19.172 10.1318 19.172 12.4117L19.172 17.8014Z" fill="#535353"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_690_500">
+                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                     </a>
+       
+        
+            
+            </div>
+
+        </div>
+
+        <div class="download_footer">
+            <div class="play_market_comfort_app__footer comfort_app_stores_box__footer ">
+                <a href="https://play.google.com/store/games?hl=en&gl=US" class="href_to_playmarket" target="blank">
+                    <img class="playmarker_size_footer" src="./img/playmarket.svg" alt="">
+                </a>
+                <div class="play_market_comfort_app_text__footer">
+                    <p class="zagruzithe_footer lang" key="zagruzithe_v">Загрузите в</p>
+                    <p class="v_google_play__footer ">Google play</p>
+                </div>
+                
+            </div>
+            <div class="appstore_footer___ comfort_app_stores_box__footer app_playstore">
+                <a href="https://play.google.com/store/games?hl=en&gl=US" class="href_to_playmarket" target="blank">
+                    <img class="appsore_size img_footer__" src="./img/icon.svg" alt="">
+                </a>
+                <div class="appstore_comfort_text__footer">
+                    <p class="zagruzithe_footer lang" key="availabll_in_app">Доступно в</p>
+                    <p class="v_google_play__footer">App Store</p>
+                </div>
+            </div>
+        </div>
+   
+        </div>
+
+        <p class="copyrigth">Copyright © 2022 Xpad.pro | All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./lang.js"></script>
+    <script>
+
+       function show1(value) {
+            document.querySelector(".text-box_1").value = value;
+        }
+        
+        let dropdown_1 = document.querySelector(".dropdown_1")
+        dropdown_1.onclick = function() {
+            dropdown_1.classList.toggle("active1")
+        }
+
+        $(document).ready(function(){
+            $('.burger_moment').click(function(event) {
+            $('.burger_moment,.header__menu, body').toggleClass('active');
+            $('body').toggleClass('lock')
+            });
+        });
+
+        $('.burger_moment').on('click', function() {
+            $(this).toggleClass("burger_moment--opened");
+            $(this).toggleClass("burger_momentu--closed");
+         });
+
+                
+
+
+         
+
+
+    </script>
+
+</body>
+</html>

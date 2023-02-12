@@ -1,0 +1,763 @@
+
+
+.src{
+    height: 60px;
+    width: 100%;
+    position: relative;
+    top: 60px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.src__row a{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+
+
+    color: #121212;;
+}
+
+.inputsss{
+    font-size: 13px ;
+    position: relative;
+    top:4px;
+    left: -7px;
+
+    
+}
+
+.launch_app_box__img img{
+    border-top-left-radius: 19px ;
+    border-top-right-radius: 19px ;
+    transition: 1s;
+}
+
+
+
+
+.src__row{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+    height: 60px;
+}
+
+.home{
+    color: #9B9DA1 ;
+}
+
+
+
+.active_launchs_src{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.03em;
+
+    color: #121212;
+}
+
+.active_launchs_and_ended_launch{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+   
+.active_launchs_and_ended_launch_1{
+    display: flex;
+    align-items:flex-end;
+}
+
+.ended_page_1{
+    margin-left: 0px ;
+}
+
+.ended_page_2{
+    margin-left: 30px;
+}
+
+.ended_launchs_src{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    /* identical to box height, or 100% */
+    margin-left: 30px !important;
+    letter-spacing: -0.03em;
+
+    color: #9B9DA1 !important;
+
+}
+
+.ended_page_1{
+    margin-left: 0px !important;
+}
+
+.circle_src{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #D1D1D1;
+}
+
+.launch_app_box{
+    height: 774px;
+    width: 370px;
+    background-color: #FAFAFA;
+    border-bottom-left-radius: 19px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 19px;
+}
+
+.launch_app_box:hover .launch_app_box__img img{
+    transform: scale(1.3);
+    transition: 1s;
+    filter: blur(7px);
+}
+
+.launch_app_box__img{
+    width: 100%;
+    background-color: #D7DADF;
+    height: 462px;
+ 
+    overflow: hidden;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+
+.lauch_apps{
+    margin-top: 130px;
+}
+
+.actual_up_to{
+    background: linear-gradient(90deg, #EFEFEF 30.73%, rgba(250, 250, 250, 0) 100%);
+    height: 37px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.actual_up_to_text{
+    line-height: 13px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #8A8D92;
+}
+
+.end_in{
+    color: #0CA41E;
+    margin-top: 0px;
+}
+
+
+.info_about_launch{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.info_about_launch__header{
+    font-weight: 500;
+    font-size: 26px;
+
+    line-height: 26px;
+    /* identical to box height, or 100% */
+
+
+    color: #121212;
+}
+
+.launch_app_box:hover .info_about_launch__header{
+    color: #0057FF;
+}
+
+.launch_app_box:hover .icon1{
+    opacity: 0.8;
+}
+
+.launch_app_box:hover .icon2{
+    opacity: 0.8;
+}
+.launch_app_box:hover .icon3{
+    opacity: 0.8;
+}
+
+
+.round_and_price{
+    margin-top: 30px;
+    display: flex;
+    
+}
+
+.round_and_price_header{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    /* identical to box height, or 100% */
+
+
+    color: #9B9DA1;
+}
+
+.round_and_price_sub{
+    font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+margin-top: 7px;
+/* identical to box height, or 100% */
+
+
+color: #121212;
+}
+
+
+.price_per{
+    margin-left: 70px;
+}
+
+.progress{
+    margin-top: 30px;
+}
+
+.per_second_part{
+    color: #9B9DA1;
+}
+
+
+.per_per{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    /* or 92% */
+    
+    line-height: 12px;
+    color: #121212;
+}
+
+
+.progress_static_top{
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+}
+
+.procent{
+    margin: 0;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    /* or 92% */
+
+
+    color: #0CA41E;
+}
+
+.actual_up_to{
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+font-size: 13px;
+gap: 5px;
+line-height: 13px;
+}
+
+
+.progress_static_bottom{
+    height: 4px;
+    width: 310px;
+    background-color: #E7E7E7;
+    margin-top: 17px;
+    border-radius: 10px;
+}
+
+.progress_static_bottom__Aactive{
+
+    background-color: #0CA41E;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.progress_static_bottom__Anactive{
+    /*background-color: #0057FF;*/
+    border-radius: 10px;
+    height: 100%;
+}
+
+.other_and_buy{
+    margin-top: 30px;
+}
+
+.buy button{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    /* identical to box height, or 100% */
+    background: #0057FF;
+    border-radius: 19px;
+    width: 83px;
+    height: 34px;
+
+    color: #FFFFFF;
+}
+
+.other_and_buy__row{
+    box-sizing: border-box;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lauch_apps__row{
+   display: grid;
+   grid-template-columns: 370px 370px 370px; 
+   justify-content: space-between;
+   margin-top: 60px;
+   grid-row-gap: 30px;
+}
+
+
+.active_launchs_and_ended_launch_mob{
+    display: none;
+}
+
+
+
+.start_in{
+    color: #0057FF;
+    margin-top: 0px;
+}
+
+.ended_lauch_box{
+    width: 370px;
+    height: 222px;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 30px;
+    border-radius: 19px;
+}
+
+.cover_and_name{
+    display: flex;
+    align-items: center;
+}
+
+.cover_of_project{
+    width: 42px;
+    height: 42px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.nema_of_project__ended{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 10px;
+    color: #121212;
+}
+
+.lauch_info_of_ended{
+    margin-top: 23px;
+}
+
+.round_of_ended{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    /* identical to box height, or 100% */
+
+
+    color: #9B9DA1;
+}
+
+.box__round_of_ended{
+    width: 131px;
+}
+
+.type_round_ended{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+    margin-top: 7px;
+
+    color: #121212;
+}
+
+.lauch_info_of_ended{
+    display: flex;
+}
+
+.price_of_token_ended{
+    margin-left: 37px;
+}
+
+.pribil_and_sobrono{
+    margin-top: 27px;
+    display: flex;
+}
+
+
+.pribil{
+    color: #0CA41E;
+}
+
+
+
+
+.dropdown_1 {
+    width: 210px;
+    height: 66px;
+    position: relative;
+    background-color: #FAFAFA;
+    border: 1px solid #F4F4F4;
+    border-radius: 31.5px;
+    box-sizing: border-box;
+
+}
+
+
+.dropdown_1::before {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+
+    width: 6px;
+    border-radius: 1px;
+    top: 27px;
+    right: 30px;
+    height: 6px;
+    border-top: 2px solid #1D1D1F;
+    border-right: 2px solid #1D1D1F;
+    transform: rotate(135deg);
+
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.dropdown_1.active1::before {
+    transform: rotate(-45deg);
+    top: 30px;
+}
+
+
+
+.dropdown_1 input {
+    cursor: pointer;
+    font-size: 13px;
+    height: 66px;
+    width: 208px;
+    box-sizing: border-box;
+    border: none;
+    position: relative;
+    padding-left: 28px;
+    outline: none;
+    background-color: #FAFAFA;
+    border-radius: 31.5px;
+    color:black;
+    font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+/* identical to box height, or 100% */
+
+
+color: #121212;
+
+    
+}
+
+.translate{
+    font-size: 13px;
+}
+
+.dropdown_1 .options_1 {
+    width: 210px;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: 0px;
+    position: relative;
+    top: 20px;
+    color: #000;
+    
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+
+.dropdown_1 .options_1 div {
+    padding: 12px 12px;
+    cursor: pointer;
+}
+
+
+
+.text-box::placeholder{
+    color: black;
+}
+
+
+
+.dropdown_1.active::before {
+    position: relative;
+    transform: rotate(-225deg);
+}
+
+
+.translate{
+    font-size: 13px;
+}
+
+.dropdown_1 .options_1 {
+    background: #FAFAFA;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 0px;
+    width: 210px;
+    position: relative;
+    top: 20px;
+    color: #000;
+    overflow: hidden;
+    font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+/* identical to box height, or 100% */
+
+
+color: #121212;
+
+    transition: 0.5s;
+}
+
+.divs_options_1{
+    padding-left: 30px;
+}
+
+.po_ubivanyu{
+    border-bottom: 1px solid #F0F0F0;
+}
+
+ .active1 .options_1 {
+    display: block;
+    height: 136px;
+    transition: 0.5s;
+}
+
+.dropdown_1 .options_1 div {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    cursor: pointer;
+}
+
+
+
+.text-box::placeholder{
+    color: white;
+}
+
+.pribil_header_text p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+    
+    
+    color: #9B9DA1;
+    
+}
+
+.pribil_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.pribil_section {
+   display: none;
+}
+
+
+
+@media(max-width:1222px){
+    .linktoTop{
+        position: absolute;
+        right: 20px ;
+    }
+}
+
+
+@media(max-width:1210px){
+    .lauch_apps__row{
+        flex-wrap: wrap;
+        width: 770px;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 38px;
+    }
+
+    .active_launchs_and_ended_launch{
+        padding-left: 20px;
+        box-sizing: border-box;
+
+    }
+
+    .active_launchs_and_ended_launch{
+        margin-bottom: 30px;
+    }
+
+    
+
+
+}
+
+
+
+@media(max-width:984px){
+    .active_launchs_src{
+        font-size: 33px ;
+    }
+
+    .ended_launchs_src{
+        font-size: 23px ;
+    }
+}
+
+
+@media(max-width:820px){
+    .lauch_apps__row{
+        flex-wrap: wrap;
+        width: 370px;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 38px;
+    }
+
+    
+}
+
+
+@media(max-width:630px){
+    .active_launchs_src{
+        font-size: 32px ;
+    }
+
+    .ended_launchs_src{
+        font-size: 20px ;
+    }
+
+    .src_between_sec{
+        display: none;
+    }
+    .active_launchs_and_ended_launch_1{
+        display: none;
+    }
+
+    .active_launchs_and_ended_launch_mob{
+        display: block;
+        margin-bottom: 30px;
+        padding-left: 20px;
+    }
+}
+
+
+@media(max-width:600px){
+    .header__logo_certik{
+        display: none;
+    }
+}
+
+
+@media(max-width:540px){
+    .header_logos{
+        width: 120px;
+    }
+}
+
+
+
+@media(max-width:504px){
+    .header_menu__row{
+        flex-direction: column;
+    }
+}
+
+
+
+@media(max-width:400px){
+    
+    .lauch_apps__row{
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .launch_app_box{
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+       
+    }
+
+    .launch_app_box__img{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .launch_app_box__img img{
+        border-top-left-radius: 0px;
+        width: 100%;
+        border-top-right-radius: 0px;
+    }
+
+    .container{
+        padding: 0px 0px;
+    }
+}
+
+
+
+@media(max-width:370px){
+    .other_and_buy__row{
+        padding-right: 0px ;
+    }
+}
+
+
+
+
+
+@media(max-width:330px){
+   .info_about_launch{
+       box-sizing: border-box;
+       padding-right: 15px ;
+       padding-left: 20px ;
+   }
+
+   .progress{
+       width: 100%;
+   }
+
+   .progress_static_top{
+       width: 100%;
+   }
+
+   .progress_static_bottom{
+       width: 100%;
+   }
+}
+

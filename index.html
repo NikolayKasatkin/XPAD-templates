@@ -1,0 +1,2620 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./Styles/header.css">
+    <link rel="stylesheet" href="./Styles/form.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    
+    <link rel="stylesheet" href="./Styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+
+    <title>Xpad.Pro</title>
+
+</head>
+<body>
+
+    <!-- 
+       ШАПКА 
+    -->
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <div class="header_logos">
+                    <div class="xpad_logo">
+                        <a href="index.html" class="header__logo_xpad">
+                            <img class="xpad_logo_img" src="img/Group 1.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="logos_line">  </div>
+
+                    <div class="xpad_logo">
+                        <a href="index.html" class="header__logo_certik">
+                            <img src="img/Certik_logo.svg" alt="">
+                        </a>
+                    </div>
+
+           
+
+                </div>
+                           
+           
+                <div class="header__burger">
+                    <div class="buy_xpp_mobile">
+                        <a href="#" class="connect_Wallet lang" key="buy_xpp_header">Купить XPP</a>
+                    </div>
+                    <div class="burger_moment">
+                        <div class="bar bars"></div>
+     
+                        <div class="bar"></div>
+                    </div>
+                    
+                </div>
+                <nav class="header__menu ">
+                    <div class="header_menu__row">
+                        <ul class="header__list">
+                            <li style="list-style: none; margin-top: 0px;">
+                                <a href="stake.html" class="header__link">Stake</a>
+                            </li>
+                            <li>
+                                <a href="projects.html" class="header__link"> Whitepaper</a>
+                            </li>
+                            <li>
+                         
+                                <!--
+                                <div class="dropdown">
+                                    <input class="text-box" type="text" placeholder="RU" readonly>
+                                    <div class="options">
+                                      <div onclick="show('EN')" id="en" class="translate"  value="en" ><button >EN</button></div>
+                                      <div onclick="show('RU')" id="ru" class="translate"  value="ru"><button  >RU</button></div>
+                                    </div>
+                                </div>
+                               
+                            <button class="header_btn" data-btn="ru">RU</button>
+                                <button class="header_btn" data-btn="en">EN</button>
+                                  -->
+                            <div class="dropdown">
+                                <p class="inputsss lang" style="color: white;" key="header_btn_ru">RU</p>
+                                <div class="options">
+                                  <div onclick="show('RU')" id="ru" class="translate">  <button>RU</button></div>
+                                  <div onclick="show('EN')" id="en" class="translate"> <button>EN</button></div>
+                                </div>
+                            
+                            </div>
+                      
+                           
+                                      
+                              
+                            </li>
+                    
+                        </ul>
+                        <div class="buttons">
+                            <div class="connect_walle_link">
+                                <a href="#" class="connect_Wallet lang" key="connect_header">Подключить кошелек</a>
+                            </div>
+                         
+                            <div class="buy_xpp">
+                                <a href="#" class="connect_Wallet buy_xpp lang"  key="buy_xpp_header">Купить XPP</a>
+        
+                            </div>
+
+                            <div class="account_link">
+                                <a href="#openModal" class="connect_Wallet">
+                                    <img src="img/account_logo_img.svg" alt="">
+                                </a>
+        
+                            </div>
+                           
+                        </div>
+                    </div>
+                 
+                </nav>
+
+            
+
+            </div>
+        </div>
+    </header>
+
+          <!-- 
+       поп-ап sign_up/ sign in
+    -->
+        <div id="openModal" class="modal-design">
+            <div class="frame">
+                <a href="#" class="close-modal">x</a>
+                <div class="two_cycle">
+                    <div class="first_cycle"></div>
+                    <div class="second_cycle"></div>
+                </div>
+               <!-- <div class="nav">
+                    <ul class"links">
+                      <li class="signin-active"><a class="btn">Sign in</a></li>
+                      <li class="signup-inactive"><a class="btn">Sign up </a></li>
+                    </ul>
+                  </div>
+                  
+                -->
+                <div class="chacccked" ng-app ng-init="checked = false">
+                            <form class="form-signin" action="" method="get" name="form">
+                                <p class="vxod_header lang" key="vxod_login">Вход</p>
+                            <label for="username" class="lang" key="email_login">E-mail/Логин
+                            </label>
+                            <input class="form-styling" type="text" name="username" placeholder=""/>
+                            <label for="password" class="lang" key="password_login">Пароль
+                            </label>
+                            <input class="form-styling" type="password" name="password" placeholder=""/>
+                            <input type="checkbox" id="checkbox"/>
+        
+                            <div class="btn-animate">
+                                <a class="btn-signin lang" key="sign_in_login">Войти</a>
+                            </div>
+        
+                            <div class="or_">
+                                <p class="lang" key="or_login">или</p>
+                            </div>
+        
+                            <button class="button_sign_in_google">
+                                Google
+                            </button>
+        
+                            <li class="signup-inactive"><a class="btn lang" key="create_account_login">Создать аккаунт</a></li>
+                    </form>
+                    
+                  <form class="form-signup" action="" method="get" name="form1">
+                      <p class="vxod_header lang" key="registration_login">Регистрация</p>
+                      <label for="fullname" class="lang" key="login_login">Логин
+                    </label>
+                      <input class="form-styling" type="text" name="fullname" placeholder=""/>
+                      <label for="email" class="lang" key="enter_pasword">Введите пароль
+                    </label>
+                      <input class="form-styling" type="text" name="email" placeholder=""/>
+                      <label for="password" class="lang" key="rewrite_password">Повторите пароль</label>
+                      <input class="form-styling" type="text" name="password" placeholder=""/>
+                    
+            
+                      <a ng-click="checked = !checked" class="btn-signup lang" key="continue_login">Продолжить</a>
+                         <div class="or_">
+                                <p class="lang" key="or_login">или</p>
+                            </div>
+        
+                            <button class="button_sign_in_google">
+                                Google
+                            </button>
+                      <li class="signin-active"><a class="btn lang" key="sign_sign_up_login">Sign in</a></li>
+                  </form>
+        
+        
+                  <form action="" method="get" name="form1" class="form-signup_contunie">
+                    <p class="vxod_header lang" key="upload_login">Загрузите фото</p>
+                    <div class="upload_photo">
+                        <div class="upload_photo__row">
+                           <input type="file" id="file" accept="image/*">
+                   
+                        </div>
+                        <label for="file" class="labelik">
+                            <div class="labe_img">
+                               <img src="img/Camera 1.svg">
+                            </div>
+                           
+                         </label>
+                    
+                        </div>
+                    <div class="buttons_and_refresh">
+                        <button class="sign_upp___ lang" key="sign_up__login">Зарегистрироваться</button>
+                        <div class="refresh_continue">
+                            <a  value="Refresh" onClick="history.go()" class="continue___ lang" key="continue_login__">Продолжить
+                            </a>
+                        </div>
+                       
+                    </div>
+                                
+                  </form>
+        
+                  
+              
+                  </div>
+            
+                  
+                  <div>
+                 
+                    <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
+                  </div>
+                
+              </div>
+             
+           
+       
+    
+    </div>
+
+           <!-- 
+       Первый блок
+    -->
+
+    <div class="first_section">
+        
+    <div class="main_vector">
+        <img src="img/main_vector.png" alt="">
+    </div>
+        <div class="container">
+        <div class="content_from_first_section">
+            <div class="content_from_first_section___row">
+                <div class="crypto_investing">
+                    <p>
+                        <span class="light-text-wrapper"><span class="light-text lang"  key="crypto_header">Криптоинвестиции без границ</span></span>
+                    </p>
+               
+                    
+                </div>
+    
+                <div class="subtext_from_first_cont">
+                    <p>
+                      <span class="bold-text-wrapper"> <span class="lang light-text_bold" key="crypto_sub">Самая доступная социальная площадка для ранних инвестиций и запуска проектов</span> </span>
+                    </p>
+                </div>
+    
+                <div class="buttons_from_first_cont">
+            
+                    <a class="launch" href="projects.html">
+                        <svg  width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_613_12)">
+                                <path fill-rule="evenodd" class="svg_color" clip-rule="evenodd" d="M18.9865 2.8617L18.8461 0.153485L16.131 0.0134034C12.4509 -0.176471 8.97187 1.66268 7.05962 4.78639C5.20349 4.77943 3.34519 5.48226 1.929 6.89489C0.93651 7.88489 0.293506 9.09146 0 10.3621C2.34366 9.82345 4.90467 10.4649 6.73067 12.2863C8.55668 14.1077 9.19966 16.6623 8.65971 19C9.93355 18.7072 11.1431 18.0659 12.1357 17.0758C13.5714 15.6437 14.2758 13.7582 14.2488 11.8813C17.3516 9.96785 19.1759 6.51403 18.9865 2.8617Z" fill="#0057FF"/>
+                            </g>
+                            <defs>
+                               <clipPath id="clip0_613_12">
+                            <rect width="19" height="19" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        Launch App</a>
+               
+                        <a class="airdrop" href="#">Airdrop</a>
+       
+                   
+    
+                </div>
+            </div>
+      
+        </div>
+        
+
+          
+        </div>
+
+        <div class="coloborate_with">
+            <div class="container container__row">
+                <div class="colob_logos swiper" >
+                    <div class="swiper-wrapper">
+                        <div class="logos_of_comp" data-swiper-autoplay="2000">
+                            <img src="img/huobi-1.svg" alt="">
+                        </div>
+                        <div class="logos_of_comp" data-swiper-autoplay="2000">
+                            <img src="img/ProBit Global 1.svg" alt="">
+                        </div>
+                        <div class="logos_of_comp" data-swiper-autoplay="2000">
+                            <img src="img/Gate.io.svg" alt="">
+                        </div>
+                        <div class="logos_of_comp" data-swiper-autoplay="2000">
+                            <img src="img/full-logo-dark.svg" alt="">
+                        </div>
+                        <div class="logos_of_comp" data-swiper-autoplay="2000">
+                            <img src="img/Bitget.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+           <!-- 
+       Блок "О компании"
+    -->   
+    <div class="about_xpad">
+        <div class="container">
+            <div class="about__row">
+                <div class="left_side_of_secAbout">
+                  <div class="left_side_of_secAbout_top">
+                        <p class="xpad_textH">Xpad<span>.pro</span></p>
+                        <p class="xpad_textSub lang" key="xpad_textSub">Cоциализированная LaunchPad-площадка с самыми комфортными условиями для ранних инвестиций, 
+                            без каких-либо обременительных требований и ограничений.</p>
+                  </div>
+
+                  <div class="left_side_of_secAbout_bottom">
+                      <div class="icon_of_social_part">
+                          <img src="img/Users 2.png" alt="">
+                      </div>
+
+                      <p class="socialization_head heading_of_about lang" key="socialization_head" >Социализация
+                    </p>
+
+                    <p class="socialization_sub sub_of_about lang" key="socialization_sub">
+                        Ваши будущие инвесторы, эдвайзеры, сотрудники, пользователи продукта — все здесь.
+                    <br>  <br>   
+                        Легко и удобно: собирайте единомышленников, расширяйте круг полезных связей, советуйтесь с 
+                        профессионалами, объединяйтесь в инвестиционные пулы, создавайте совместные проекты, покупайте и 
+                        продавайте токены, получайте бонусы за социальную активность.
+
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="liner_column_grandiet"></div>
+                <div class="liner_grandiet"></div>
+
+                <div class="rigth_side_of_secAbout">
+                    <div class="rigth_side_of_secAbout_top">
+                        <div class="icon_of_allocation_part">
+                            <img class="wallet_img" src="img/Wallet 2.png" alt="">
+                            <p class="heading_of_about lang" key="allocation">100% аллокация</p>
+                            <p class="sub_of_about lang" key="allocation_sub">Аллокации до 1000$ со 100% шансом по принципу<br> first come — first served (в порядке очереди).</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="rigth_side_of_secAbout_bottom">
+                        <div class="icon_of_barrierFree_part">
+                            <img class="bareirer_free_img" src="img/Layers 2.png" alt="">
+                            <p class="heading_of_about lang" key="bezbarnost">Безбарьерность</p>
+                            <p class="sub_of_about lang" key="bezbarnost_sub">Нет рандома, белых списков, тиров, лотерей, кармы, переподписки, индексации и высоких коэффициентов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- 
+       Блок где есть призыв к действу. Начать игнвестировать 
+    -->   
+
+    <div class="inveting_and_made">
+        <div class="special_container">
+             <div class="offers_boxes__row">
+                 <div class="investing_box">
+                    <div class="decor">
+                        <img src="img/decor_!.png" alt="">
+                    </div>
+
+                    <div class="decor__1 " >
+                        <img src="img/decor_!.png" alt="">
+                    </div>
+
+                    <div class="investing_box_content">
+                        <p class="inv_heading_1">
+                            <span class="invest_wrapper"><span class="inv_heading lang" key="inv_heading">Инвестируйте в стартапы</span></span>
+                        </p>
+                        
+                        <p>
+                            <span class="invest_sub_wrapper"> <span class="inv_sub lang" key="inv_sub">Выбирайте тариф и зарабатывайте на ранних стадиях в проверенных проектах, без мошенников и коррупционных схем.
+                            </span></span>
+                        </p>
+                       
+                        <div class="start_to_div">
+                            <a class="start_to lang" href="#" style="text-decoration: none; color: #0057FF;" key="start_to">Начать инвестировать
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                 </div>
+                 <div class="made_box">
+                    <div class="decor_1">
+                        <img src="img/decor_1.png" alt="">
+                    </div>
+                    <div class="made_box_content">
+                        <p class="md_heading_1">
+                            <span class="md_heading_wrapper" ><span class="md_heading lang" key="md_heading">Запустите свой проект </span></span>
+                        </p>
+                         
+                        <p class="md_sub_1">
+                            <span class="md_sub_wraper"><span  class="md_sub lang" key="md_sub">Выйдите на листинг быстрее и с большей аудиторией благодаря экспертизе и инкубационным программам Xpad.</span></span>
+                        </p>
+                       
+
+                       
+                        <div class="start_to_div ">
+                            <a class="start_to start_to_2 lang" href="#" style="text-decoration: none; color: white;" key="start_to_2">Подать заявку
+ 
+                            </a>
+                        </div>
+                        
+                    </div>
+                 </div>
+             </div>
+
+        </div>
+    </div>
+
+          <!-- 
+       Токен Сейл блок
+    -->   
+
+    <div class="tokensale">
+        <div class="container">
+            <div class="token_sale_top_info">
+                <p class="token_sale_top_info_header">Token Sale Xpad</p>
+                <div class="token_sale_top_info__row">
+                        <div class="token_sale_top_info__row_sub">
+                            <p class="token_sale_top_info__row_sub_p lang" key="token_sale_top_info__row_sub_p">Не упустите возможность приобрести токен XPP на ранней стадии и по очень выгодной цене
+                            </p>
+                        </div>
+
+                    <div class="soft_ticker_platform">
+                        <div class="softcap">
+                            <p class="token_top_p_head">Softcap</p>
+                            <p class="token_top_p_bottom">$950 000</p>
+                        </div>
+
+                        <div class="ticker">
+                            <p class="token_top_p_head lang" key="ticker">Тикер</p>
+                            <p class="token_top_p_bottom">XPP</p>
+                        </div>
+
+
+                        <div class="platform">
+                            <p class="token_top_p_head lang" key="platform">Платформа</p>
+                            <p class="token_top_p_bottom">BSC20</p>
+                        </div>
+
+                        <div class="addres_copy">
+                            <p class="token_top_p_head lang" key="adress">Адрес контракта</p>
+                                <div class="addres_copy__row">
+                                    <p class="token_top_p_bottom">0x217...33f8</p>
+                                    <img class="token_copy_icon" src="img/copy_icon.png" alt="">
+                                </div>
+                                
+                        </div>
+                    </div>
+                 
+
+
+                </div>
+
+            </div>
+
+        <div class="token_box_and_usdt">
+            <div class="token_sale_boxes swiper">
+                <div class="swiper-wrapper">
+                    <div class="token_info_box box_no_margin ">
+                        <div class="active_sale__row">
+                            <div class="active_sale">
+                                <p class="active_sale_text lang" key="active">Активен</p>
+                            </div>
+                            <div class="upto_date">
+                                <p><span class="lang" key="end_in">Завершится</span> 07.09.2022</p>
+                            </div>
+                        </div>
+        
+                        <div class="token_info_box_bottoms">
+                            <p class="price_header lang" key="price">Цена:</p>
+                            <p class="price_sub_box">0,05 USD</p>
+        
+                            <p class="sales_round">Pre-Seed <span class="sales_span">round 1</span></p>
+        
+                            <div class="count_and_vesting__row">
+                                <div class="count_sale">
+                                    <p class="count_sale_top lang" key="count">Количество:</p>
+                                    <p class="count_sale_bottom">19 000 000 XPP</p>
+                                </div>
+        
+                                <div class="vesting">
+                                    <p class="count_sale_top lang" key="westing">Вестинг:</p>
+                                    <p class="count_sale_bottom">4 <span class="lang" key="mouth">месяца</span></p>
+                                </div>
+        
+        
+                            </div>
+        
+                            <div class="progress_sale__row">
+                                <div class="progress_sale">
+                                    <div style="width: 98%;"  class="progress_range"></div>
+                                </div>
+    
+                                <p class="active_progress_text">98%</p>
+                            </div>
+                           
+    
+                            
+        
+                        </div>
+        
+                       
+                    </div>
+    
+                    <div class="token_info_box box_no_margin not_active_sales second_sales_box ">
+                        <div class="active_sale__row">
+                            <div class="not_active_sale">
+                                <p class="not_active_sale_text lang" key="soon">Скоро</p>
+                            </div>
+                    
+                        </div>
+        
+                        <div class="token_info_box_bottoms">
+                            <p class="price_header lang"  key="price">Цена:</p>
+                            <p class="price_sub_box not_active_price">0,07 <span>USD</span></p>
+        
+                            <p class="sales_round">Seed <span class="sales_span">round 2</span></p>
+        
+                            <div class="count_and_vesting__row">
+                                <div class="count_sale">
+                                    <p class="count_sale_top lang" key="count"></p>
+                                    <p class="count_sale_bottom">38 000 000 XPP</p>
+                                </div>
+        
+                                <div class="vesting">
+                                    <p class="count_sale_top lang" key="westing">Вестинг:</p>
+                                    <p class="count_sale_bottom">3 <span class="lang" key="mouth"></span></p>
+                                </div>
+        
+        
+                            </div>
+        
+                            <div class="progress_sale__row">
+                                <div class="progress_sale">
+                                    <div style="width: 1%;"  class="progress_range"></div>
+                                </div>
+    
+                                <p class="active_progress_text not_active_progress_text">0%</p>
+                            </div>
+                           
+        
+                        </div>
+        
+                       
+                    </div>
+    
+                    <div class="token_info_box not_active_sales ">
+                        <div class="active_sale__row">
+                            <div class="not_active_sale">
+                                <p class="not_active_sale_text lang" key="soon">Скоро</p>
+                            </div>
+                    
+                        </div>
+        
+                        <div class="token_info_box_bottoms">
+                            <p class="price_header lang"  key="price">Цена:</p>
+                            <p class="price_sub_box not_active_price">0,1 <span>USD</span></p>
+        
+                            <p class="sales_round">Private <span class="sales_span">round 3</span></p>
+        
+                            <div class="count_and_vesting__row">
+                                <div class="count_sale">
+                                    <p class="count_sale_top lang" key="count">Количество:</p>
+                                    <p class="count_sale_bottom">57 000 000 XPP</p>
+                                </div>
+        
+                                <div class="vesting">
+                                    <p class="count_sale_top lang" key="westing">Вестинг:</p>
+                                    <p class="count_sale_bottom">2 <span class="lang" key="mouth">месяца</span></p>
+                                </div>
+        
+        
+                            </div>
+        
+                            <div class="progress_sale__row">
+                                <div class="progress_sale">
+                                    <div style="width: 1%;"  class="progress_range"></div>
+                                </div>
+    
+                                <p class="active_progress_text not_active_progress_text">0%</p>
+                            </div>
+                           
+        
+                        </div>
+        
+                       
+                    </div>
+    
+                    <div class="token_info_box not_active_sales ">
+                        <div class="active_sale__row">
+                            <div class="not_active_sale">
+                                <p class="not_active_sale_text lang" key="soon">Скоро</p>
+                            </div>
+                    
+                        </div>
+        
+                        <div class="token_info_box_bottoms">
+                            <p class="price_header lang"  key="price">Цена:</p>
+                            <p class="price_sub_box not_active_price">0,15 <span>USD</span></p>
+        
+                            <p class="sales_round">Public<span class="sales_span">round A</span></p>
+        
+                            <div class="count_and_vesting__row">
+                                <div class="count_sale">
+                                    <p class="count_sale_top lang" key="count">Количество:</p>
+                                    <p class="count_sale_bottom">76 000 000 XPP</p>
+                                </div>
+        
+                                <div class="vesting">
+                                    <p class="count_sale_top lang" key="westing">Вестинг:</p>
+                                    <p class="count_sale_bottom">1 <span class="lang" key="mouth">месяца</span></p>
+                                </div>
+        
+        
+                            </div>
+        
+                            <div class="progress_sale__row">
+                                <div class="progress_sale">
+                                    <div style="width: 1%;"  class="progress_range"></div>
+                                </div>
+    
+                                <p class="active_progress_text not_active_progress_text">0%</p>
+                            </div>
+                           
+        
+                        </div>
+        
+                       
+                    </div>
+    
+    
+                    <div class="token_info_box not_active_sales ">
+                        <div class="active_sale__row">
+                            <div class="not_active_sale">
+                                <p class="not_active_sale_text lang" key="soon">Скоро</p>
+                            </div>
+                           <div class="gatei_io_img">
+                               <img src="img/Gate_io.svg" alt="">
+                           </div>
+                        </div>
+        
+                        <div class="token_info_box_bottoms">
+                            <p class="price_header lang"  key="price">Цена:</p>
+                            <p class="price_sub_box not_active_price">0,2 <span>USD</span></p>
+        
+                            <p class="sales_round">Public<span class="sales_span"> round B (gate.io)</span></p>
+        
+                            <div class="count_and_vesting__row">
+                                <div class="count_sale">
+                                    <p class="count_sale_top lang" key="count">Количество:</p>
+                                    <p class="count_sale_bottom">304 000 000 XPP</p>
+                                </div>
+        
+                                <div class="vesting">
+                                    <p class="count_sale_top lang" key="westing">Вестинг:</p>
+                                    <p class="count_sale_bottom lang" key="after_listing">После листинга</p>
+                                </div>
+        
+        
+                            </div>
+        
+                            <div class="progress_sale__row">
+                                <div class="progress_sale">
+                                    <div style="width: 1%;"  class="progress_range"></div>
+                                </div>
+    
+                                <p class="active_progress_text not_active_progress_text">0%</p>
+                            </div>
+                           
+        
+                        </div>
+        
+                       
+                    </div>
+    
+                     <div class="token_info_box not_active_sales">
+                        <div class="active_sale__row">
+                            <div class="not_active_sale">
+                                <p class="not_active_sale_text lang" key="soon">Скоро</p>
+                            </div>
+                    
+                        </div>
+        
+                        <div class="token_info_box_bottoms">
+                            <p class="price_header lang"  key="price">Цена:</p>
+                            <p class="price_sub_box not_active_price">0,3 <span>USD</span></p>
+        
+                            <p class="sales_round lang" key="listing">Листинг<span class="sales_span"></span></p>
+        
+                            <div class="count_and_vesting__row">
+                                <div class="count_sale">
+                                    <p class="count_sale_top lang" key="count">Количество:</p>
+                                    <p class="count_sale_bottom">38 000 000 XPP</p>
+                                </div>
+        
+                    
+        
+        
+                            </div>
+        
+                            <div class="progress_sale__row">
+                                <div class="progress_sale">
+                                    <div style="width: 1%;"  class="progress_range"></div>
+                                </div>
+    
+                                <p class="active_progress_text not_active_progress_text">0%</p>
+                            </div>
+                           
+        
+                        </div>
+        
+                       
+            
+                </div>
+                </div>
+                <div class="next_and_prev tokensales_next_and_prev">
+                   
+                    <div class="swiper-button-prev prev_silver_2 prev_silver_3" ><img src="./img/svg_next.svg" alt=""></div>
+                    <div class="swiper-button-next next_silver_2"><img src="./img/svg_next.svg" alt=""></div>
+                   
+                 
+                </div>
+
+
+            </div>
+
+
+            <div class="sales_usdt">
+                <div class="box_wrapper">
+                 
+                        <p class="text1 m50 lang" key="text1">Хочу купить на сумму</p>
+            
+                    <div class="box">
+                        <div class="number_and_valuta">
+                            <div class="inputatation">
+                                <h3 id="output" value="100">100</h3>
+                             </div>
+                            <h3 class="voluyta">BUSD</h3>
+                        </div>
+                        <div class="inner-box">
+                
+                            <input type="range" id="fader" min="1" max="1000" value="100" step="20" onmousemove="rangeslider(this.value)" onchange="rangeslider(this.value)">
+                        </div>
+                    </div>
+            
+                    <p class="text1 lang" style="margin-top: 32px;" key="text2">Получу</p>
+            
+            
+                    <div id="box" class="box">
+                        <div id="number_and_valuta" class="number_and_valuta">
+                            <div class="inputatation">
+                                <h3 id="outputt" value="2000">2000</h3>
+                             </div>
+                            <h3 id="voluyta" class="voluyta">XPP</h3>
+                        </div>
+                        <div id="inner-box" class="inner-box">
+                        
+                            <input type="range" id="faderr" min="1" max="10000" value="1000" step="1" onmousemove="rangeslider2(this.value2)" onchange="rangeslider2(this.value2)">
+                        </div>
+                    </div>
+            
+                    <div class="slaes_button">
+                        <button class="lang" key="slaes_button">Купить</button>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+          
+        
+        </div>
+          
+
+            
+              
+        </div>
+    </div>
+
+
+          <!-- 
+      Блок "Особенности токена" 
+    -->   
+
+    <div class="Peculiarities">
+        <div class="container">
+            <p>
+                <span class="peculiarities_header_wrapper"><span class="peculiarities_header lang" key="peculiarities_header">Особенности токена XPP</span></span>
+            </p>
+            
+            </p>
+
+            <div class="Peculiarities__row">
+                <div class="first_pec">
+                    <div class="first_pec__box" style="margin-top: 0px;">
+                        <div class="pec_img">
+                            <img src="img/lock 2.svg" alt="">
+                        </div>
+                        <div class="pec_content">
+                            <p class="pec_cont_header lang" key="ogronichenia_header">Ограниченная эмиссия</p>
+                            <p class="pec_cont_sub pec_sub_1 lang" key="ogronichenia_sub">Основной дефляционный инструмент для долгосрочных инвестиций. Курс токена растет
+                                 планомерно, защищен от инфляции и рыночной волатильности.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="first_pec__box">
+                        <div class="pec_img">
+                            <img src="img/Quantum.svg" alt="">
+                        </div>
+                        <div class="pec_content">
+                            <p class="pec_cont_header">Quantum Resistant</p>
+                            <p class="pec_cont_sub pec_sub_2 lang" key="quantum_sub">Большинство схем асимметричной криптографии, включая схемы
+                                 цифровой подписи Биткойн и Эфириум не защищены от квантовых угроз. Внедрение квантово-устойчивых алгоритмов защитит от квантовых атак 
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="first_pec__box">
+                        <div class="pec_img">
+                            <img src="img/trend-down 2.svg" alt="">
+                        </div>
+                        <div class="pec_content">
+                            <p class="pec_cont_header lang" key="antidamp">Антидамп</p>
+                            <p class="pec_cont_sub pec_sub_3 lang" key="antidamp_sub">Справедливая система комиссий с уникальным DeFi-алгоритмом для плавного регулирования курса монет. Это защитит курс монеты от сливов и поможет обеспечить его устойчивый рост.
+
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Для моб. весрии(картинка)-->
+                <div class="second_pec_img">
+                    <img class="for_desktop" src="img/pec_img.png" alt="">
+                    <img class="for_mob_and_tablet" src="img/for_mob_and_tablet.png" alt="">
+                </div>
+
+                <div class="first_pec third_pec">
+                    <div class="first_pec__box" style="margin-top: 0px;">
+                        <div class="pec_img">
+                            <img src="img/buy-crypto 2.svg" alt="">
+                        </div>
+                        <div class="pec_content">
+                            <p class="pec_cont_header">Asset-Backed Securities</p>
+                            <p class="pec_cont_sub pec_sub_4 lang" key="Asset_sub">Вид цифровой валюты, цена которой обеспечена активом реального мира. Компании, выпускающие такие монеты, гарантируют их держателю обмен на конкретный товар или услугу.
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="first_pec__box">
+                        <div class="pec_img">
+                            <img src="img/Fire 3.svg" alt="">
+                        </div>
+                        <div class="pec_content">
+                            <p class="pec_cont_header lang" key="sjigania">Сжигание монет</p>
+                            <p class="pec_cont_sub pec_sub_5 lang" key="sjigania_sub">Механизм, обеспечивающий устойчивость курса монет за счет постоянного повышения минимального порога их стоимости. Это привлечет интерес покупателей и поможет поддерживать стабильность работы сети.
+
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="first_pec__box">
+                        <div class="pec_img">
+                            <img src="img/security 3.svg" alt="">
+                        </div>
+                        <div class="pec_content">
+                            <p class="pec_cont_header">Buyback Xpad Finance</p>
+                            <p class="pec_cont_sub pec_sub_6 lang" key="fond_sub">Фонд регулируемый сообществом  голосованием, направленный на защиту курса монеты от инфляции и повышение стабильности работы экосистемы Xpad. направленное на сжигание, выкуп, резервирование и стейкинг монет.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+            <!-- 
+      Блок "Токеномика" 
+    -->   
+
+    <div class="tokenomics">
+        <div class="container">
+             <div class="tokenomics_box">
+                 <p>
+                     <span class="token_head_wrapper"><span class="token_head lang" key="tokenomics_header">Токеномика</span></span>
+                 </p>
+
+
+                 <p class="token_sub_1">
+                     <span class="token_sub_wrapper"><span class="token_sub lang"  key="tokenomics_sub">Гарантированный возврат средств всем инвесторам при форс мажорных ситуациях,
+                        а все не проданные монеты будут перечислены в пользу стейкинга с расчетом на 50+ лет</span></span>
+                 </p>
+            
+
+                 <div class="token_static">
+                     <div class="first_s">
+                         <div class="static_info__row" style="margin-top: 15px;">
+
+                             <div class="static_info_name">
+                                <p class="info_name_heading lang" key="staking_tokenomics">
+                                    Стейкинг
+                                </p>
+
+                                <p class="xpp">
+                                    1 140 000 000 XPP
+                                </p>
+                             </div>
+
+                                <div class="static_info_pracent">
+                                        <p class="info_pracent">60%</p>
+                                </div>
+
+                                    <div class="static_info_color color1">
+                                         
+                                    </div>
+
+                         </div>
+
+
+                         <div class="static_info__row">
+
+                            <div class="static_info_name">
+                               <p class="info_name_heading lang" key="podoushka_tokenomics">
+                                Подушка безопасности
+                               </p>
+
+                               <p class="xpp">
+                                95 000 000 XPP
+                               </p>
+                            </div>
+
+                               <div class="static_info_pracent">
+                                       <p class="info_pracent">5%</p>
+                               </div>
+
+                                   <div class="static_info_color color2">
+                                        
+                                   </div>
+
+                        </div>
+
+
+                        <div class="static_info__row">
+
+                            <div class="static_info_name">
+                               <p class="info_name_heading lang" key="marketing_tokenomics">
+                                Маркетинг и реклама
+                               </p>
+
+                               <p class="xpp">
+                                76 000 000 XPP
+                               </p>
+                            </div>
+
+                               <div class="static_info_pracent">
+                                       <p class="info_pracent">4%</p>
+                               </div>
+
+                                   <div class="static_info_color color3">
+                                        
+                                   </div>
+
+                        </div>
+
+                        <div class="static_info__row">
+
+                            <div class="static_info_name">
+                               <p class="info_name_heading lang" key="comade_tokenomics">
+                                Команда 
+                               </p>
+
+                               <p class="xpp">
+                                38 000 000 XPP
+                               </p>
+                            </div>
+
+                               <div class="static_info_pracent">
+                                       <p class="info_pracent">2%</p>
+                               </div>
+
+                                   <div class="static_info_color color4">
+                                        
+                                   </div>
+
+                        </div>
+
+
+                        <div class="static_info__row">
+
+                            <div class="static_info_name">
+                               <p class="info_name_heading lang" key="partnes_tokenomics">
+                                Партнеры, эдвайзеры, инфлюенсеры
+                               </p>
+
+                               <p class="xpp">
+                                38 000 000 XPP
+                               </p>
+                            </div>
+
+                               <div class="static_info_pracent">
+                                       <p class="info_pracent">2%</p>
+                               </div>
+
+                                   <div class="static_info_color color5">
+                                        
+                                   </div>
+
+                        </div>
+
+                        
+                     </div>
+                     <div class="diagrama_of_tokenomics">
+                        <img src="img/token_diagrama.png" alt="">
+                    </div>
+
+                    <div class="first_r">
+                        <div class="static_info__row static_info__row_2" style="margin-top: 15px;">
+                            <div class="static_info_color color6 rigth_tokens_static_color">
+                                        
+                            </div>
+
+                            <div class="static_info_pracent rigth_tokens_static_pracent">
+                                <p class="info_pracent">1%</p>
+                        </div>
+
+                            <div class="static_info_name rigth_tokens_static_name">
+                               <p class="info_name_heading">
+                                Airdrop
+                               </p>
+
+                               <p class="xpp">
+                                19 000 000 XPP
+                               </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="static_info__row static_info__row_2">
+                            <div class="static_info_color color7 rigth_tokens_static_color">
+                                        
+                            </div>
+
+                            <div class="static_info_pracent rigth_tokens_static_pracent">
+                                <p class="info_pracent">1%</p>
+                        </div>
+
+                            <div class="static_info_name rigth_tokens_static_name">
+                               <p class="info_name_heading">
+                                Pre-Seed round
+                               </p>
+
+                               <p class="xpp">
+                                19 000 000 XPP
+                               </p>
+                            </div>
+                        </div>
+
+
+                        <div class="static_info__row static_info__row_2">
+                            <div class="static_info_color color8 rigth_tokens_static_color">
+                                        
+                            </div>
+
+                            <div class="static_info_pracent rigth_tokens_static_pracent">
+                                <p class="info_pracent">1%</p>
+                        </div>
+
+                            <div class="static_info_name rigth_tokens_static_name">
+                               <p class="info_name_heading">
+                                Seed round
+                               </p>
+
+                               <p class="xpp">
+                                38 000 000 XPP
+                               </p>
+                            </div>
+                        </div>
+
+
+                        <div class="static_info__row static_info__row_2">
+                            <div class="static_info_color color9 rigth_tokens_static_color">
+                                        
+                            </div>
+
+                            <div class="static_info_pracent rigth_tokens_static_pracent">
+                                <p class="info_pracent">3%</p>
+                        </div>
+
+                            <div class="static_info_name rigth_tokens_static_name">
+                               <p class="info_name_heading">
+                                Private round
+                               </p>
+
+                               <p class="xpp">
+                                57 000 000 XPP
+                               </p>
+                            </div>
+                        </div>
+
+                        <div class="static_info__row static_info__row_2">
+                            <div class="static_info_color color10 rigth_tokens_static_color">
+                                        
+                            </div>
+
+                            <div class="static_info_pracent rigth_tokens_static_pracent">
+                                <p class="info_pracent">4%</p>
+                        </div>
+
+                            <div class="static_info_name rigth_tokens_static_name">
+                               <p class="info_name_heading">
+                                Public round A (IDO)
+                               </p>
+
+                               <p class="xpp">
+                                76 000 000 XPP
+                               </p>
+                            </div>
+                        </div>
+
+                        <div class="static_info__row static_info__row_2">
+                            <div class="static_info_color color11 rigth_tokens_static_color">
+                                        
+                            </div>
+
+                            <div class="static_info_pracent rigth_tokens_static_pracent">
+                                <p class="info_pracent">16%</p>
+                        </div>
+
+                            <div class="static_info_name rigth_tokens_static_name">
+                               <p class="info_name_heading">
+                                Public round B (IEO)
+                               </p>
+
+                               <p class="xpp">
+                                    304 000 000 XPP
+                               </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                 </div>
+             </div>
+        </div>
+    </div>
+
+                <!-- 
+      Блок "Преимущества социальной площадки Xpad" 
+    -->   
+    <div class="benefits">
+        <div class="container">
+            <p class="benefits_header">
+                <span class="benefits_header_wrapper"><span class="benefits_header_1 lang" key="benefits_header">Преимущества социальной площадки Xpad</span></span>
+            </p>
+
+      
+
+                <div class="benefits__row">
+
+
+                    <div class="benefits_box box1">
+                        <div class="benefits_box__img">
+                            <img src="img/DAO.svg" alt="">
+                        </div>
+
+                        <div class="benefits_box_content">
+                            <p class="benefits_box_content_H lang" key="pricipi_dao">Принципы DAO</p>
+                            <p class="benefits_box_content_sub sub_spec_1 lang" key="pricipi_dao__sub"> Мы фильтруем скам и предоставляем отчеты, но запускаются только проекты,
+                                 которые получат одобрение активного сообщества. </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits_box box2">
+                        <div class="benefits_box__img">
+                            <img src="img/audit.svg" alt="">
+                        </div>
+
+                        <div class="benefits_box_content">
+                            <p class="benefits_box_content_H lang" key="expert_audit">Экспертный аудит</p>
+                            <p class="benefits_box_content_sub sub_spec_1 lang" key="expert_audit__sub"> Профессиональный аудит и аналитика. Только лучшие, значимые, жизнеспособные проекты. Без шансов для мошенников.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits_box box3">
+                        <div class="benefits_box__img">
+                            <img src="img/sovpo.svg" alt="">
+                        </div>
+
+                        <div class="benefits_box_content">
+                            <p class="benefits_box_content_H lang" key="sovopo">Сопровождение</p>
+                            <p class="benefits_box_content_sub sub_spec_2 lang" key="sovopo_sub"> Комплексное сопровождение и акселерация стартапов. Помощь в финансировании и продвижении.
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits_box box4">
+                        <div class="benefits_box__img">
+                            <img src="img/saveicon.svg" alt="">
+                        </div>
+
+                        <div class="benefits_box_content">
+                            <p class="benefits_box_content_H lang" key="zashita">Защита анонимности
+                            </p>
+                            <p class="benefits_box_content_sub sub_spec_3 lang" key="zashita_sub"> Ваши сделки с XPP не оставляют цифровых следов о том, с какого кошелька списаны деньги, куда они были 
+                                зачислены и какова сумма перевода, что обеспечивает конфиденциальность и безопасность данных.
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits_box box5">
+                        <div class="benefits_box__img">
+                            <img src="img/safaty.svg" alt="">
+                        </div>
+
+                        <div class="benefits_box_content">
+                            <p class="benefits_box_content_H lang" key="kostodialni">Некастодиальный криптокошелек</p>
+                            <p class="benefits_box_content_sub sub_spec_3 lang" key="kostodialni_sub"> 
+                                Вы полностью контролируете все ключи и средства на криптовалютном кошельке. Никакие санкции, 
+                                внешнеполитические и прочие факторы не могут повлиять на возможность управления средствами и их баланс.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits_box box6">
+                        <div class="benefits_box__img">
+                            <img src="img/safety.png" alt="">
+                        </div>
+
+                        <div class="benefits_box_content">
+                            <p class="benefits_box_content_H lang" key="submit_rez">Подтверждение резервов
+                            </p>
+                            <p class="benefits_box_content_sub sub_spec_4 lang" key="submit_rez__sub"> Любой пользователь сможет отслеживать состояние холодных и горячих кошельков. Для подтверждения резервов, предотвращения рисков и повышения доверия инвесторов.
+
+
+
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="benefits_box box7">
+                        <div class="benefits_box__img">
+                            <img src="img/power_of_coumminity_icon.svg" alt="">
+                        </div>
+
+                        <div class="benefits_box_content">
+                            <p class="benefits_box_content_H lang" key="poqer_comunity">Сила комьюнити</p>
+                            <p class="benefits_box_content_sub sub_spec_4 lang" key="poqer_comunity__sub"> Используйте возможность продвижения на большие аудитории с мощной поддержкой активного сообщества. </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits_box box8">
+                        <div class="benefits_box__img">
+                            <img src="img/equal_rigths.svg" alt="">
+                        </div>
+
+                        <div class="benefits_box_content">
+                            <p class="benefits_box_content_H lang" key="equal_powers">
+                                Равные условия
+                            </p>
+                            <p class="benefits_box_content_sub sub_spec_4 lang" key="equal_powers__sub"> Справедливое распределение токенов вне зависимости от вашего портфеля или опыта. Награды за активность. </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits_box box9">
+                        <div class="benefits_box__img">
+                            <img src="img/multichain.svg" alt="">
+                        </div>
+
+                        <div class="benefits_box_content">
+                            <p class="benefits_box_content_H lang" key="multichain">Мультичейн
+                            </p>
+                            <p class="benefits_box_content_sub sub_spec_4 lang" key="multichain_sub"> Привлеките большее число потенциальных инвесторов —  мы открыты для проектов на любом блокчейне.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+     </div>
+    </div>
+
+
+
+                <!-- 
+      Блок "Live Pools" 
+    -->   
+    <div class="live_pools">
+        <div class="container live_pools_container">
+            <div class="liev_pools_heading">
+                <p class="header_pool">
+                    <span class="header_pool_wrapper"><span class="header_pool_1">Live Pools</span></span>
+                </p>
+                <p class="header_sub__pool">
+                    <span class="header_sub__pool_wrapper"><span class="header_sub__pool_1 lang" key="live_pool_sub">Участвуйте в первичных продажах, получайте прибыль и дополнительное вознаграждение от стейкинга</span></span>
+                </p>
+            </div>
+
+            <div class="containers_pool__row">
+                 <div class="containers_pool_box ">
+                    <div class="img_pools">
+                        <img class="live_polls_img" src="" alt="">
+                    </div>
+                    
+                    <div class="content_pools">
+                        <p>
+                            <span class="header_box_pools_wrapper"><span class="header_box_pools">iBeam</span></span>
+                        </p>
+
+                        <p>
+                            <span class="sub_box_pools_wrapper"><span class="sub_box_pools lang" key="ibeam_sub">Первый в мире криптолокатор для быстрых знакомств. Находи интересных людей поблизости и заводи полезные контакты!</span></span>
+                        </p>
+                        
+
+                        <div class="strelka__row">
+                            <a class="link_of_pools_box lang" href="launch_page.html" key="podrobne">Подробнее</a>
+                            <img  class="strela_row_img" style="position:relative; top:1px" src="img/strelka.svg" alt="">
+                          </div> 
+                    </div>
+  
+                 </div>
+
+                 <div class="containers_pool_box ">
+                    <div class="img_pools">
+                        <img class="live_polls_img"  src="" alt="">
+                    </div>
+                    
+                    <div class="content_pools">
+                        <p>
+                            <span class="header_box_pools_wrapper"><span class="header_box_pools">Pintagram</span></span>
+                        </p>
+            
+                        <p>
+                            <span class="sub_box_pools_wrapper"><span class="sub_box_pools lang" key="pintagram_sub">Социальная сеть для продвижения и обмена NFT, 
+                                с GameFi-механиками: соревнуйся, побеждай, зарабатывай!</span></span>
+                        </p>
+                
+
+                            <div class="strelka__row">
+                                <a class="link_of_pools_box lang" href="#" key="podrobne">Подробнее</a>
+                                <img style="position:relative; top:1px"  class="strela_row_img" src="img/strelka.svg" alt="">
+                              </div> 
+                    </div>
+  
+                 </div>
+
+                 <div class="containers_pool_box ">
+                    <div class="img_pools">
+                        <img class="live_polls_img"  src="" alt="">
+                    </div>
+                    
+                    <div class="content_pools">
+
+                        <p>
+                            <span class="header_box_pools_wrapper"><span class="header_box_pools">Crypto Mafia</span></span>
+                        </p>
+                        <p>
+                            <span class="sub_box_pools_wrapper"><span class="sub_box_pools lang" key="crypto_mafia_sub">Первый в мире криптолокатор для быстрых знакомств. Находи интересных людей поблизости и заводи полезные контакты!</span></span>
+                        </p>
+                     
+                       <div class="strelka__row">
+                         <a class="link_of_pools_box lang" href="#" key="podrobne">Подробнее</a>
+                         <img style="position:relative; top:1px" src="img/strelka.svg"  class="strela_row_img" alt="">
+                       </div> 
+                    </div>
+  
+                 </div>
+
+                 <div class="containers_pool_box ">
+                    <div class="img_pools">
+                        <img class="live_polls_img"  src="" alt="">
+                    </div>
+                    
+                    <div class="content_pools">
+                        <p>
+                            <span class="header_box_pools_wrapper"><span class="header_box_pools">Metapolis</span></span>
+                        </p>
+                   
+                        <p>
+                            <span class="sub_box_pools_wrapper"><span  class="sub_box_pools lang" key="metapolis_sub">Покорите открытый бесшовный мир в стиле постапокалиптического киберпанка вместе со своими друзьями. </span></span>
+                        </p>
+
+                        <div class="strelka__row">
+                            <a class="link_of_pools_box lang" href="#" key="podrobne">Подробнее</a>
+                            <img style="position:relative; top:1px" src="img/strelka.svg"  class="strela_row_img" alt="">
+                          </div> 
+                    </div>
+  
+                 </div>
+
+             
+
+                
+            </div>
+            <div class="bolshe_proktov_box">
+                <a href="./projects.html" class="bolshe_proktov lang" key="bolshe_proektov">Больше проектов</a>
+            </div>
+           
+        </div>
+    </div>
+
+                    <!-- 
+      Блок "О приложении" 
+    -->   
+
+    <div class="comforte_app">
+        <div class="container">
+            <div class="app_content">
+            <div class="app_content__row">
+                <p>
+                    <span class="app_content_header_wrapper"><span class="app_content_header lang" key="app_content_header">Удобное приложение</span></span>
+                    
+                </p>
+                <div class="app_cont_box">
+                    <p class="app_content_sub lang" key="app_content_sub">Быстрая и простая регистрация, высокая защищенность, удобный интерфейс и
+                        богатый функционал поднимут ваш комфорт в мире крипты на качественно новый уровень!</p>
+                </div>
+       
+
+                     <div class="download_app">
+                        <div class="play_market_comfort_app comfort_app_stores_box app_appstore">
+                            <a href="https://play.google.com/store/games?hl=en&gl=US" class="href_to_playmarket" target="blank">
+                                <img class="playmarker_size" src="./img/playmarket.svg" alt="">
+                            </a>
+                            <div class="play_market_comfort_app_text">
+                                <p class="zagruzithe lang" key="zagruzithe_v">Загрузите в</p>
+                                <p class="v_google_play">Google play</p>
+                            </div>
+                            
+                        </div>
+                        <div class="appstore_footer comfort_app_stores_box app_playstore">
+                            <a href="https://play.google.com/store/games?hl=en&gl=US" class="href_to_playmarket" target="blank">
+                                <img class="appsore_size" src="./img/apple_icon.svg" alt="">
+                            </a>
+                            <div class="appstore_comfort_text">
+                                <p class="zagruzithe lang" key="availabll_in_app">Доступно в</p>
+                                <p class="v_google_play">App Store</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+               
+            </div>
+      
+        </div>
+        <div class="rigth_slide">
+               
+            <div class="swiper mySwiper1">
+      
+                <div class="swiper-wrapper wrapper_of_mob_side">
+          
+                  <div class="swiper-slide slide2">
+
+                      <div class="slide_content ">
+                            <img src="img/welocome_app.png" alt="">
+                      </div>
+
+                    </div>
+
+                      <div class="swiper-slide slide2">
+                        <div class="slide_content ">
+                            <img src="img/home_app.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide slide2">
+                        <div class="slide_content ">
+                            <img src="img/search_app.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide slide2 ">
+                        <div class="slide_content last_slide_2" >
+                            <img src="img/project_page_app.png" alt="" >
+                      </div>
+                    </div>
+                    <div class="swiper-slide slide2  sldee2">
+                    
+                    </div>
+                
+
+                 
+                </div>
+                
+              
+
+          
+                </div>
+                <div class="rigth_slide_buttons">
+   
+                    <div class="two_strelka">
+                        <div class="swiper-button-prev_1 prev_silver">
+                            <!--<img src="./img/svg_next.svg" alt="">--> 
+                            <div class="cricle_of_strelka">
+         
+                            </div>
+                         </div>
+                         <div class="swiper-button-next_1 next_silver">
+                             <div class="cricle_of_strelka cricle_of_strelka_2"> </div>
+                         </div>
+                    </div>
+                    
+                </div>
+           
+               
+              </div>
+    
+ 
+        
+              
+          
+        </div>
+
+    </div>
+
+                        <!-- 
+      Блок "AIRDROP " 
+    -->  
+
+    <div class="airdrop_page">
+        <div class="air_drop_img">
+            <img src="img/decor_airdrop.png" alt="">
+        </div>
+        <div class="container container_mob_airdrop">
+            <div class="mega_airdrop_head_and_sub">
+                <div class="airdrop_header_box">
+                    <p class="heading_airdrop_page">MEGA Airdop $380 000</p>
+                </div>
+                <div class="sub_airdrop_box">
+                    
+                </div>
+                <p class="sub_airdrop_page lang" key="sub_airdrop_page">Эксклюзивное предложение с большими призами. Успей приобрести!
+                </p>
+            </div>
+        
+            <div class="airdrop_page__row">
+                <div class="airdrop_page_content">
+               
+                 
+                    <div class="slide_mesto">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide first_slide_position">
+                                  <div class="slide_content first_as">
+                                      <h4 class="up">1 <span class="lang" key="mesto">место</span></h4>
+                                      <h4 class="medium">10 000</h4>
+                                      <h4 class="down">USD</h4>
+                                  </div>
+                              </div>
+                             
+                                  <div class="swiper-slide" >
+                                      <div class="slide_content">
+                                        <h4 class="up">2 <span class="lang" key="mesto">место</span></h4>
+                                          <h4 class="medium">5000</h4>
+                                          <h4 class="down">USD</h4>
+                                      </div>
+                             
+                              </div>
+                              
+                                  <div class="swiper-slide">
+                                      <div class="slide_content">
+                                        <h4 class="up">3 <span class="lang" key="mesto">место</span></h4>
+                                          <h4 class="medium">2000</h4>
+                                          <h4 class="down">USD</h4>
+                                      </div>
+                      
+                              </div>
+                         
+                                  <div class="swiper-slide">
+                                      <div class="slide_content">
+                                        <h4 class="up">4 <span class="lang" key="mesto">место</span></h4>
+                                          <h4 class="medium">1000</h4>
+                                          <h4 class="down">USD</h4>
+                                      </div>
+                              
+                              </div>
+
+                           
+                                <div class="swiper-slide">
+                                    <div class="slide_content">
+                                        <h4 class="up">5 <span class="lang" key="mesto">место</span></h4>
+                                        <h4 class="medium">900</h4>
+                                        <h4 class="down">USD</h4>
+                                    </div>
+                             
+                            </div>
+
+                            <div class="swiper-slide">
+                             
+                                    <div class="slide_content">
+                                        <h4 class="up">6 <span class="lang" key="mesto">место</span></h4>
+                                        <h4 class="medium">800</h4>
+                                        <h4 class="down">USD</h4>
+                                    </div>
+                               
+                            </div>
+                             
+                                  <div class="swiper-slide">
+                                      <div class="slide_content">
+                                        <h4 class="up">7 <span class="lang" key="mesto">место</span></h4>
+                                          <h4 class="medium">700</h4>
+                                          <h4 class="down">USD</h4>
+                                      </div>
+                           
+                              </div>
+                              
+                                  <div class="swiper-slide">
+                                      <div class="slide_content">
+                                        <h4 class="up">8 <span class="lang" key="mesto">место</span></h4>
+                                          <h4 class="medium">600</h4>
+                                          <h4 class="down">USD</h4>
+                                      </div>
+                              
+                              </div>
+
+                         
+                                <div class="swiper-slide">
+                                    <div class="slide_content">
+                                        <h4 class="up">9 <span class="lang" key="mesto">место</span></h4>
+                                        <h4 class="medium">500</h4>
+                                        <h4 class="down">USD</h4>
+                                    </div>
+                               
+                            </div>
+                      
+
+                            <div class="swiper-slide">
+                              
+                                    <div class="slide_content">
+                                        <h4 class="up">10 <span class="lang" key="mesto">место</span></h4>
+                                        <h4 class="medium">400</h4>
+                                        <h4 class="down">USD</h4>
+                                    </div>
+                             
+                            </div>
+
+                            <div class="swiper-slide">
+                               
+                                    <div class="slide_content">
+                                        <h4 class="up">11 <span class="lang" key="mesto">место</span></h4>
+                                        <h4 class="medium">300</h4>
+                                        <h4 class="down">USD</h4>
+                                    </div>
+                              
+                            </div>
+
+                            <div class="swiper-slide">
+                               
+                                    <div class="slide_content">
+                                        <h4 class="up">12 <span class="lang" key="mesto">место</span></h4>
+                                        <h4 class="medium">200</h4>
+                                        <h4 class="down">USD</h4>
+                                    </div>
+                          
+                            </div>
+
+                            <div class="swiper-slide">
+                             
+                                    <div class="slide_content">
+                                        <h4 class="up">13 <span class="lang" key="mesto">место</span></h4>
+                                        <h4 class="medium">100</h4>
+                                        <h4 class="down">USD</h4>
+                                    </div>
+                            
+                            </div>
+                         
+                            </div>
+                            <div class="swiper-button-next airdrop_button-next "><img src="./right_arrow.svg" alt=""></div>
+                            <div class="swiper-button-prev airdrop_button-prev"><img src="./left_arrow.svg" alt=""></div>
+                          </div>
+
+                          
+                          
+                  
+                    </div>
+                    <p class="sub_airdrop_page sub_air_2 lang" key="sub_air_2">Всего будет разыграно 19 000 000 токенов. Более 7 000 участников получат не менее 50$ гарантированного вознаграждения.</p>
+                    <div class="toapericate_botton">
+                        <a class="toApericate lang" href="#" key="toApericate">Участвовать</a>
+                        <p class="recive_10 lang" key="recive_10">Получи 10$ за каждого приглашенного друга</p>
+                    </div>
+                    
+                </div>
+
+                <div class="airdrop_gift">
+                    <div class="airdrop_gift_small">
+                        <img class="airdrop_img_pos" src="img/decor_gift.svg" alt="">
+                        <img class="xpp_coin" src="img/xpp_coin.png" alt="">
+                     
+                    </div>
+                    <div class="decor_glasses"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            <!-- 
+      Блок "Дорожная Карта " 
+    -->  
+
+    <div class="roadmap">
+        <div class="container">
+            <div class="roadmap__row">
+                <div class="roadmap_header_box">
+                    <div class="header_text_box_road_map">
+                        <p class="roadmap_header_text_wrapper_1">
+                            <span class="roadmap_header_text_wrapper"><span class="roadmap_header_text">2022
+                                Roadmap</span></span>
+                        </p>
+                      
+                    </div>
+                 
+                </div>
+
+                <div class="Q1andQ2">
+                    <p class="q1">Q1</p>
+            
+
+                    <div class="line_ofQ1andQ2">
+                        
+                    </div>
+                    <ul class="q1_succsesd">
+                        <li class="lang" key="razra">Разработка user-friendly платформы для запуска стартапов в экосистемах<br> Polkadot и Binance Smart Chain</li>
+                        <li class="lang" key="patgatovka">Подготовка инфраструктуры для проведения IDO</li>
+                        <li>Seed Equity Round</li>
+                    </ul>
+
+                    <ul class="q1_notsuccsesd">
+                        <li class="lang" key="econo">Разработка экономики, токеномики и технической документации</li>
+                        <li class="lang" key="web_site">Создание веб-сайта</li>
+                        <li class="lang" key="launch_dex"> Запуск Beta-версии платформы: веб-сайт, пользовательский интерфейс DEX</li>
+                        <li class="lang" key="MVP">Токен MVP Binance Smart Chain Bridge</li>
+                        <li>Seed Round</li>
+                    </ul>
+
+                 <div class="q2">
+                    <p class="q1">Q2</p>
+                    <div class="line_ofQ1andQ2 Q2_line"></div>
+                    <ul class="q1_notsuccsesd">
+                      <li class="lang" key="стратегии">Разработка стратегии контент-маркетинга, продвижения и рекламы проекта</li>
+                      <li class="lang" key="программы">Разработка программы поощрения пользователей, запуск Airdrop</li>
+                      <li>Private Round</li>
+                      <li>Public Round A</li>
+                      <li>Public Round B</li>
+                      <li class="lang" key="IEO">IEO на Gate.io</li>
+                      <li class="lang" key="connecting_multichain">Подключение мультичейн-кошелька</li>
+                      <li class="lang" key="launch_alfa">Разработка и запуск альфа- и бета-версии приложения для iOS, Android</li>
+                      <li class="lang" key="final_realise">Финальный релиз платформы</li>
+                      <li class="lang" key="listing_gate">Листинг на Gate.io</li>
+                 
+                    </ul>
+                 </div>
+
+                </div>
+
+
+            </div>
+           
+        </div>
+
+    </div>
+
+
+                            <!-- 
+      Блок "Команда " 
+    -->  
+
+
+    <div class="team">
+        <div class="meet_our_team">
+               
+                <div class="meet_our_team__row">
+                    <div class="meet_teem_content">
+                        <p class="meet_team_h1">Meet Our Team</p>
+                        <p class="meet_team_p lang" key="meet_team_p">Эксперты и эдвайзеры core-команды Xpad.pro будут рады оказать вам консультационную поддержку, будь это
+                             вопросы по диверсификации портфеля, или проблемы с очередным майлстоуном вашего проекта.</p>
+                    </div>
+
+                    <div class="mail_team">
+                        <div class="decor_team">
+                            <img src="img/decor_team.png" alt="">
+                        </div>
+                            <p class="our_mail lang" key="our_mail">Наш адрес для обратной связи:</p>
+                            <p class="our_mail_box">info@xpadpro.com</p>
+                    </div>
+                </div>
+  
+        </div>
+
+        <div class="our_team_employers">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                
+
+                    <div class="swiper-slide our_team_employers_box">
+                        <div class="reddit_emp">
+                            <a href=""><img src="img/redit_emp.svg" alt=""></a>
+                        </div>
+
+                        <div class="emp_img">
+                            <img width="390px" height="390px" src="img/emp1.png" srcset="img/emp1.png 2x"  loading="lazy"  alt="">
+                        </div>
+
+                        <div class="emp_info_row">
+                                <p class="emp_info_name lang" key="Станислав">Станислав Павловский</p>
+                                <p class="emp_zvania">CTO</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide our_team_employers_box">
+                        <div class="reddit_emp">
+                            <img src="img/redit_emp.svg" alt="">
+                        </div>
+
+                        <div class="emp_img">
+                            <img src="img/emp2.png" loading="lazy"   alt="">
+                        </div>
+
+                        <div class="emp_info_row">
+                                <p class="emp_info_name lang" key="Анатолий">Анатолий Кравчук</p>
+                                <p class="emp_zvania">CEO</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide our_team_employers_box">
+                        <div class="reddit_emp">
+                            <img src="img/redit_emp.svg"  alt="">
+                        </div>
+
+                        <div class="emp_img">
+                            <img src="img/emp3.png" loading="lazy"  alt="">
+                        </div>
+
+                        <div class="emp_info_row">
+                                <p class="emp_info_name lang" key="Ласкар">Ласкар Симеонов</p>
+                                <p class="emp_zvania">COO</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide our_team_employers_box">
+                        <div class="reddit_emp">
+                            <img src="img/redit_emp.svg" alt="">
+                        </div>
+
+                        <div class="emp_img">
+                            <img src="img/emp4.png" loading="lazy"   alt="">
+                        </div>
+
+                        <div class="emp_info_row">
+                                <p class="emp_info_name lang" key="Тилемисулы">Тилемисулы Асылтас</p>
+                                <p class="emp_zvania">CMO</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide our_team_employers_box">
+                        <div class="reddit_emp">
+                            <img src="img/redit_emp.svg" alt="">
+                        </div>
+
+                        <div class="emp_img">
+                            <img src="img/emp5.png" loading="lazy"   alt="">
+                        </div>
+
+                        <div class="emp_info_row">
+                                <p class="emp_info_name lang" key="Софья">Софья Мирошниченко</p>
+                                <p class="emp_zvania">CFO</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide our_team_employers_box">
+                        <div class="reddit_emp">
+                            <img src="img/redit_emp.svg" alt="">
+                        </div>
+
+                        <div class="emp_img">
+                            <img src="img/employer6.jpg" loading="lazy"   alt="">
+                        </div>
+
+                        <div class="emp_info_row">
+                                <p class="emp_info_name" >Ardo Leok</p>
+                                <p class="emp_zvania">CIO</p>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide our_team_employers_box">
+                        <div class="reddit_emp">
+                            <img src="img/redit_emp.svg" alt="">
+                        </div>
+
+                        <div class="emp_img">
+                            <img src="img/employer7.jpg" loading="lazy"   alt="">
+                        </div>
+
+                        <div class="emp_info_row">
+                                <p class="emp_info_name lang">Elaine Adamson</p>
+                                <p class="emp_zvania">Head of Design</p>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide our_team_employers_box">
+                        <div class="reddit_emp">
+                            <img src="img/redit_emp.svg" alt="">
+                        </div>
+
+                        <div class="emp_img">
+                            <img src="img/employer8.jpg" loading="lazy"   alt="">
+                        </div>
+
+                        <div class="emp_info_row">
+                                <p class="emp_info_name lang">Mattys Mathebula</p>
+                                <p class="emp_zvania">Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide our_team_employers_box">
+                        <div class="reddit_emp">
+                            <img src="img/redit_emp.svg" alt="">
+                        </div>
+
+                        <div class="emp_img">
+                            <img src="img/employer9.jpg" loading="lazy"   alt="">
+                        </div>
+
+                        <div class="emp_info_row">
+                                <p class="emp_info_name lang">Lee Stevenson</p>
+                                <p class="emp_zvania">IOS Developer</p>
+                        </div>
+                    </div>
+         
+
+                   
+        </div>
+        <div class="next_and_prev">
+            <div class="swiper-button-prev prev_silver_2 prev_silver_3"><img src="./img/svg_next.svg" alt=""></div>
+            <div class="swiper-button-next next_silver_2"><img src="./img/svg_next.svg" alt=""></div>
+         
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="sovorovojdenia">
+
+        <div class="container">
+            <div class="sovorovojdenia_box">
+                    <div class="sovpo_content">
+                        <p class="heading_sovpo lang" key="heading_sovpo">Сопровождение проектов</p>
+                        <p class="sub_sovpo lang" key="sub_sovpo">Пройдите листинг на крупнейших биржах вместе с командой экспертов в криптостартапах. Подхватим вашу идею или проект на любом этапе, обеспечим финансирование, поможем с продвижением и масштабируем.
+                        </p>
+                    </div>
+                    <div class="sovpo_img">
+                        <img src="img/sovpo_img.png" alt="">
+                    </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <div class="fonds__">
+        <p class="fonds_header lang" key="fonds_header">Выгодно представим ваш проект инвестиционным фондам</p>
+        <div class="fonts_container swiper">
+            <div class="swiper-wrapper">
+
+                <div class="fonds_slide swiper-slide">
+                    <div class="fonds_slide_box">
+                        <div class="fonds_slide_img_box"><img src="./img/vendeta.png" alt="" width="120.85px" height="50.45px"></div>
+                    </div>
+                   
+                </div>
+
+                <div class="fonds_slide swiper-slide">
+                    <div class="fonds_slide_box">
+                        <div class="fonds_slide_img_box"><img src="./img/future-logo-small 1.svg" alt=""></div>
+                    </div>
+             
+                </div>
+
+                <div class="fonds_slide swiper-slide">
+                    <div class="fonds_slide_box">
+                        <div class="fonds_slide_img_box"><img src="./img/39442204_362181077653570_5419746177723662336_n 1.svg" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="fonds_slide swiper-slide">
+
+                    <div class="fonds_slide_box">
+                        <div class="fonds_slide_img_box"><img src="./img/Consumer_Wordmark 1.svg" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="fonds_slide swiper-slide">
+    
+                    <div class="fonds_slide_box">
+                        <div class="fonds_slide_img_box"><img src="./img/digital_group.svg" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="fonds_slide swiper-slide">
+                  
+                    <div class="fonds_slide_box">
+                        <div class="fonds_slide_img_box"><img src="./img/Hashed 1.svg" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="fonds_slide swiper-slide">
+                    <div class="fonds_slide_box">
+                        <div class="fonds_slide_img_box"><img src="./img/fenbushi_english_1 1.svg" alt=""></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+            <div class="fonts_container_1 swiper">
+            
+                <div class="swiper-wrapper">
+                        <div class="fonds_slide swiper-slide">
+                            <div class="fonds_slide_box">
+                                <div class="fonds_slide_img_box"><img src="./img/Numerai-Logo-Side-Black 1.svg" alt="" width="120.85px" height="50.45px"></div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="fonds_slide swiper-slide">
+                            <div class="fonds_slide_box">
+                                <div class="fonds_slide_img_box"><img src="./img/Placeholder+Logo 1.svg" alt="" width="120.85px" height="50.45px"></div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="fonds_slide swiper-slide">
+                            <div class="fonds_slide_box">
+                                <div class="fonds_slide_img_box"><img src="./img/ARRINGTON XRP CAPITAL 1.svg" alt="" width="120.85px" height="50.45px"></div>
+                            </div>
+                        
+                        </div>
+
+
+                        <div class="fonds_slide swiper-slide">
+                            <div class="fonds_slide_box">
+                                <div class="fonds_slide_img_box"><img src="./img/Sparklogo 1.png" alt="" width="120.85px" height="50.45px"></div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="fonds_slide swiper-slide">
+                            <div class="fonds_slide_box">
+                                <div class="fonds_slide_img_box"><img src="./img/AU21 CAPITAL 1.svg" alt="" width="120.85px" height="50.45px"></div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="fonds_slide swiper-slide">
+                            <div class="fonds_slide_box">
+                                <div class="fonds_slide_img_box"><img src="./img/MIH-header-logo 1.svg" alt="" width="120.85px" height="50.45px"></div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="fonds_slide swiper-slide">
+                            <div class="fonds_slide_box">
+                                <div class="fonds_slide_img_box"><img src="./img/logo-sprite 1.svg" alt="" width="120.85px" height="50.45px"></div>
+                            </div>
+                        
+                        </div>
+                </div>
+              
+            </div>
+            <div class="bolshe_proktov_box"  style="display: flex; align-self: center; justify-content: center;">
+                <a  href="./adding.html" class="bolshe_proktov_2 lang" key="podats_zayavku">Подать заявку</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container mother">
+         
+             <!--<a class="linktoTop" href="#"><img src="img/linktoTop_icon.png" alt=""></a> -->  
+  
+        <div class="footer">
+            <div class="header_logos">
+                <div class="xpad_logo">
+                    <a href="#" class="header__logo_xpad">
+                        <svg width="114" height="25" viewBox="0 0 114 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.6108 7.09091L41.8107 10.8089H41.896L44.1065 7.09091H46.7113L43.3821 12.5455L46.7859 18H44.1332L41.896 14.2766H41.8107L39.5735 18H36.9315L40.3459 12.5455L36.9954 7.09091H39.6108ZM48.1708 18V7.09091H52.4748C53.3022 7.09091 54.0071 7.24893 54.5895 7.56499C55.1719 7.87749 55.6158 8.3125 55.9212 8.87003C56.2301 9.42401 56.3846 10.0632 56.3846 10.7876C56.3846 11.5121 56.2283 12.1513 55.9158 12.7053C55.6033 13.2592 55.1506 13.6907 54.5575 13.9996C53.968 14.3086 53.2543 14.4631 52.4162 14.4631H49.6729V12.6147H52.0433C52.4872 12.6147 52.853 12.5384 53.1406 12.3857C53.4318 12.2294 53.6484 12.0146 53.7905 11.7411C53.9361 11.4641 54.0089 11.1463 54.0089 10.7876C54.0089 10.4254 53.9361 10.1094 53.7905 9.83949C53.6484 9.56605 53.4318 9.35476 53.1406 9.20561C52.8494 9.05291 52.4801 8.97656 52.0327 8.97656H50.4773V18H48.1708ZM58.5033 18H56.0317L59.7977 7.09091H62.77L66.5306 18H64.059L61.3264 9.58381H61.2412L58.5033 18ZM58.3488 13.712H64.1869V15.5124H58.3488V13.712ZM71.7108 18H67.8437V7.09091H71.7428C72.8401 7.09091 73.7847 7.3093 74.5766 7.74609C75.3685 8.17933 75.9775 8.80256 76.4037 9.61577C76.8334 10.429 77.0482 11.402 77.0482 12.5348C77.0482 13.6712 76.8334 14.6477 76.4037 15.4645C75.9775 16.2812 75.365 16.908 74.566 17.3448C73.7705 17.7816 72.8188 18 71.7108 18ZM70.1501 16.0238H71.615C72.2968 16.0238 72.8703 15.9031 73.3355 15.6616C73.8042 15.4165 74.1558 15.0384 74.3902 14.527C74.6281 14.0121 74.7471 13.348 74.7471 12.5348C74.7471 11.7287 74.6281 11.07 74.3902 10.5586C74.1558 10.0472 73.806 9.67081 73.3408 9.42933C72.8756 9.18786 72.3021 9.06712 71.6203 9.06712H70.1501V16.0238ZM79.352 18.1385C79.0004 18.1385 78.6986 18.0142 78.4465 17.7656C78.1979 17.5135 78.0736 17.2116 78.0736 16.8601C78.0736 16.5121 78.1979 16.2138 78.4465 15.9652C78.6986 15.7166 79.0004 15.5923 79.352 15.5923C79.6929 15.5923 79.9912 15.7166 80.2469 15.9652C80.5026 16.2138 80.6304 16.5121 80.6304 16.8601C80.6304 17.0945 80.57 17.3093 80.4493 17.5046C80.3321 17.6964 80.1776 17.8509 79.9859 17.968C79.7941 18.0817 79.5828 18.1385 79.352 18.1385ZM82.536 18V7.09091H86.84C87.6674 7.09091 88.3723 7.24893 88.9547 7.56499C89.5371 7.87749 89.981 8.3125 90.2864 8.87003C90.5953 9.42401 90.7498 10.0632 90.7498 10.7876C90.7498 11.5121 90.5936 12.1513 90.2811 12.7053C89.9686 13.2592 89.5158 13.6907 88.9228 13.9996C88.3333 14.3086 87.6195 14.4631 86.7814 14.4631H84.0382V12.6147H86.4086C86.8525 12.6147 87.2182 12.5384 87.5059 12.3857C87.7971 12.2294 88.0137 12.0146 88.1557 11.7411C88.3013 11.4641 88.3741 11.1463 88.3741 10.7876C88.3741 10.4254 88.3013 10.1094 88.1557 9.83949C88.0137 9.56605 87.7971 9.35476 87.5059 9.20561C87.2147 9.05291 86.8453 8.97656 86.3979 8.97656H84.8425V18H82.536ZM92.248 18V7.09091H96.5519C97.3758 7.09091 98.0789 7.23828 98.6613 7.53303C99.2472 7.82422 99.6929 8.23793 99.9983 8.77415C100.307 9.30682 100.462 9.93359 100.462 10.6545C100.462 11.3789 100.305 12.0021 99.993 12.5241C99.6805 13.0426 99.2277 13.4403 98.6347 13.7173C98.0452 13.9943 97.3314 14.1328 96.4933 14.1328H93.6116V12.2791H96.1205C96.5608 12.2791 96.9266 12.2187 97.2178 12.098C97.509 11.9773 97.7256 11.7962 97.8676 11.5547C98.0132 11.3132 98.086 11.0131 98.086 10.6545C98.086 10.2923 98.0132 9.98686 97.8676 9.73828C97.7256 9.4897 97.5072 9.30149 97.2124 9.17365C96.9213 9.04226 96.5537 8.97656 96.1098 8.97656H94.5544V18H92.248ZM98.1393 13.0355L100.851 18H98.3044L95.6517 13.0355H98.1393ZM112.117 12.5455C112.117 13.7351 111.891 14.7472 111.44 15.5817C110.993 16.4162 110.382 17.0536 109.608 17.494C108.837 17.9308 107.971 18.1491 107.008 18.1491C106.039 18.1491 105.169 17.929 104.398 17.4886C103.628 17.0483 103.019 16.4109 102.571 15.5763C102.124 14.7418 101.9 13.7315 101.9 12.5455C101.9 11.3558 102.124 10.3438 102.571 9.50923C103.019 8.67472 103.628 8.03906 104.398 7.60227C105.169 7.16193 106.039 6.94176 107.008 6.94176C107.971 6.94176 108.837 7.16193 109.608 7.60227C110.382 8.03906 110.993 8.67472 111.44 9.50923C111.891 10.3438 112.117 11.3558 112.117 12.5455ZM109.778 12.5455C109.778 11.7749 109.663 11.125 109.432 10.5959C109.205 10.0668 108.883 9.66548 108.468 9.39205C108.052 9.11861 107.566 8.98189 107.008 8.98189C106.451 8.98189 105.964 9.11861 105.549 9.39205C105.133 9.66548 104.81 10.0668 104.579 10.5959C104.352 11.125 104.238 11.7749 104.238 12.5455C104.238 13.3161 104.352 13.9659 104.579 14.495C104.81 15.0241 105.133 15.4254 105.549 15.6989C105.964 15.9723 106.451 16.109 107.008 16.109C107.566 16.109 108.052 15.9723 108.468 15.6989C108.883 15.4254 109.205 15.0241 109.432 14.495C109.663 13.9659 109.778 13.3161 109.778 12.5455Z" fill="white"/>
+                            <g clip-path="url(#clip0_701_15)">
+                            <path d="M20.1278 4.12468C18.9433 5.1243 17.4459 6.3998 15.8447 6.96289C12.3609 8.18794 8.57392 4.82385 4.88281 4.82385L8.89013 8.90933C12.0133 12.0875 17.1226 12.0875 20.2457 8.90933L28.9894 0.0112305C24.792 0.0112308 23.2931 1.45331 20.1278 4.12468Z" fill="white"/>
+                            <path d="M8.87329 20.8856C10.0577 19.886 11.5552 18.6105 13.1564 18.0474C16.6402 16.8223 20.4272 20.1864 24.1183 20.1864L20.1109 16.1009C16.9878 12.9227 11.8784 12.9227 8.7554 16.1009L0.0117188 24.9991C4.209 24.9991 5.70794 23.557 8.87329 20.8856Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_701_15">
+                            <rect width="29" height="25" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
+                    </a>
+                </div>
+    
+                <div class="logos_line">  </div>
+    
+                <div class="xpad_logo">
+                    <a href="#" class="header__logo_certik">
+                        <img src="img/Certik_logo.svg" alt="">
+                    </a>
+                </div>
+    
+            </div>
+
+            <div class="invAndStart">
+               <a href="#" class="lang" key="fors_inventrs">Для инвесторов</a>
+               <a  href="#" class="lang" key="start_ups">Для стартапов </a>
+               <a  href="#" class="lang" key="founders">Соискателям</a>
+            </div>
+
+            <div class="whitepaper">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0641 16.6323C11.293 16.6855 11.314 16.9855 11.091 17.0598L9.77432 17.4931C6.46597 18.5598 4.72431 17.6681 3.64931 14.3598L2.58264 11.0681C1.51597 7.75977 2.39931 6.00977 5.70764 4.9431L6.1443 4.79849C6.48002 4.68732 6.80674 5.02403 6.71142 5.36459C6.66417 5.5334 6.61871 5.70957 6.57431 5.89311L5.75764 9.38479C4.84097 13.3098 6.18264 15.4765 10.1076 16.4098L11.0641 16.6323Z" fill="white"/>
+                    <path d="M14.8078 2.67395L13.4162 2.34895C10.6328 1.69062 8.97452 2.23228 7.9995 4.24895C7.7495 4.75728 7.5495 5.37395 7.38283 6.08228L6.56617 9.57391C5.7495 13.0572 6.8245 14.7739 10.2995 15.5989L11.6995 15.9322C12.1828 16.0489 12.6328 16.1239 13.0495 16.1572C15.6495 16.4072 17.0328 15.1906 17.7328 12.1822L18.5495 8.69892C19.3662 5.21562 18.2995 3.49062 14.8078 2.67395ZM13.2412 11.1072C13.1662 11.3906 12.9162 11.5739 12.6328 11.5739C12.5828 11.5739 12.5328 11.5656 12.4745 11.5572L10.0495 10.9406C9.71618 10.8572 9.51618 10.5156 9.59952 10.1822C9.68285 9.84891 10.0245 9.64891 10.3578 9.73225L12.7828 10.3489C13.1245 10.4322 13.3245 10.7739 13.2412 11.1072ZM15.6828 8.29061C15.6078 8.57391 15.3578 8.75725 15.0745 8.75725C15.0245 8.75725 14.9745 8.74891 14.9162 8.74058L10.8745 7.71562C10.5412 7.63228 10.3412 7.29062 10.4245 6.95728C10.5078 6.62395 10.8495 6.42395 11.1828 6.50728L15.2245 7.53228C15.5662 7.60728 15.7662 7.94895 15.6828 8.29061Z" fill="white"/>
+                    </svg>
+                    
+                <a href="" class="lang" key="for_investrs">Для инвесторов</a>
+            </div>
+
+            <div class="social_media_href">
+                <a href=""><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_690_490)">
+                    <path d="M12.5 0C19.1278 0 24.5 5.373 24.5 12C24.5 18.6279 19.1278 24 12.5 24C5.87217 24 0.5 18.6278 0.5 12C0.5 5.373 5.87225 0 12.5 0Z" fill="#535353"/>
+                    <path d="M20.0018 8.08415C19.4776 8.31062 18.9135 8.46287 18.3218 8.53191C18.9264 8.18013 19.3898 7.62437 19.6081 6.96068C19.0426 7.28692 18.4171 7.5232 17.7503 7.6499C17.2171 7.09867 16.4573 6.75439 15.6158 6.75439C14.0018 6.75439 12.6924 8.02417 12.6924 9.59158C12.6924 9.81435 12.7179 10.0311 12.7681 10.2389C10.3381 10.1204 8.18257 8.99012 6.74111 7.27341C6.48909 7.69267 6.34508 8.17939 6.34508 8.69989C6.34508 9.68389 6.86106 10.5539 7.6456 11.0617C7.16562 11.0467 6.71556 10.9199 6.32037 10.7062V10.7422C6.32037 12.1177 7.32834 13.2644 8.66633 13.5254C8.42108 13.59 8.16305 13.6252 7.89605 13.6252C7.7078 13.6252 7.52482 13.608 7.34629 13.5742C7.71826 14.7022 8.79831 15.5227 10.0786 15.5452C9.07737 16.3072 7.81655 16.7602 6.44634 16.7602C6.21006 16.7602 5.97757 16.7468 5.74805 16.7205C7.04328 17.526 8.57934 17.9963 10.2315 17.9963C15.6106 17.9963 18.5521 13.6703 18.5521 9.92021L18.5438 9.55275C19.1137 9.15367 19.6096 8.65421 20.0018 8.08415Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_690_490">
+                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    </a>
+                <a href=""><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_690_493)">
+                    <path d="M12.5 24C19.1274 24 24.5 18.6274 24.5 12C24.5 5.37259 19.1274 0 12.5 0C5.87259 0 0.5 5.37259 0.5 12C0.5 18.6274 5.87259 24 12.5 24Z" fill="#535353"/>
+                    <path d="M5.99028 11.7402L17.5603 7.2792C18.0972 7.08521 18.5663 7.41021 18.3923 8.22221L18.3933 8.2212L16.4232 17.5022C16.2773 18.1602 15.8863 18.3202 15.3393 18.0102L12.3393 15.7992L10.8923 17.1932C10.7323 17.3532 10.5972 17.4882 10.2873 17.4882L10.5003 14.4352L16.0603 9.41215C16.3023 9.19924 16.0063 9.07924 15.6873 9.29121L8.81629 13.6172L5.85428 12.6932C5.21129 12.4892 5.19728 12.0502 5.99028 11.7402Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_690_493">
+                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                     </a>
+                <a href=""><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.5" cy="12" r="12" fill="#535353"/>
+                    <path d="M9.4222 8C11.4999 8 13.1841 9.67272 13.1841 11.736C13.1841 13.7992 11.4998 15.4718 9.4222 15.4718C7.3446 15.4718 5.66016 13.7992 5.66016 11.736C5.66016 9.67272 7.34447 8 9.4222 8ZM15.4299 8.21884C16.4688 8.21884 17.3109 9.79336 17.3109 11.736H17.3111C17.3111 13.6781 16.4689 15.2531 15.43 15.2531C14.3912 15.2531 13.549 13.6781 13.549 11.736C13.549 9.79386 14.391 8.21884 15.4299 8.21884ZM18.3375 8.58518C18.7028 8.58518 18.9991 9.99581 18.9991 11.736C18.9991 13.4756 18.7029 14.8868 18.3375 14.8868C17.9721 14.8868 17.6761 13.476 17.6761 11.736C17.6761 9.99594 17.9722 8.58518 18.3375 8.58518Z" fill="black"/>
+                    </svg>
+                     </a>
+                <a href=""><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_690_500)">
+                    <path d="M12.5 0C5.87253 0 0.5 5.37253 0.5 12C0.5 18.6274 5.87253 23.9999 12.5 23.9999C19.1274 23.9999 24.5 18.6274 24.5 12C24.5 5.37253 19.1273 0 12.5 0ZM9.29837 17.8014H6.66365V9.28939H9.29837V17.8014ZM7.96845 8.17468C7.10798 8.17468 6.41042 7.47143 6.41042 6.60407C6.41042 5.73661 7.10808 5.03341 7.96845 5.03341C8.82883 5.03341 9.52639 5.73661 9.52639 6.60407C9.52644 7.47148 8.82887 8.17468 7.96845 8.17468ZM19.172 17.8014H16.55V13.3333C16.55 12.1078 16.0845 11.4238 15.1155 11.4238C14.0609 11.4238 13.51 12.1362 13.51 13.3333V17.8014H10.983V9.28939H13.51V10.4358C13.51 10.4358 14.2701 9.02975 16.075 9.02975C17.8799 9.02975 19.172 10.1318 19.172 12.4117L19.172 17.8014Z" fill="#535353"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_690_500">
+                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                     </a>
+       
+        
+            
+            </div>
+
+        </div>
+
+        <div class="download_footer">
+            <div class="play_market_comfort_app__footer comfort_app_stores_box__footer ">
+                <a href="https://play.google.com/store/games?hl=en&gl=US" class="href_to_playmarket" target="blank">
+                    <img class="playmarker_size_footer" src="./img/playmarket.svg" alt="">
+                </a>
+                <div class="play_market_comfort_app_text__footer">
+                    <p class="zagruzithe_footer lang" key="zagruzithe_v">Загрузите в</p>
+                    <p class="v_google_play__footer ">Google play</p>
+                </div>
+                
+            </div>
+            <div class="appstore_footer___ comfort_app_stores_box__footer app_playstore">
+                <a href="https://play.google.com/store/games?hl=en&gl=US" class="href_to_playmarket" target="blank">
+                    <img class="appsore_size img_footer__" src="./img/icon.svg" alt="">
+                </a>
+                <div class="appstore_comfort_text__footer">
+                    <p class="zagruzithe_footer lang" key="availabll_in_app">Доступно в</p>
+                    <p class="v_google_play__footer">App Store</p>
+                </div>
+            </div>
+        </div>
+   
+        </div>
+
+        <p class="copyrigth">Copyright © 2022 Xpad.pro | All rights reserved.</p>
+    </footer>
+        <!-- Swiper JS -->
+     
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  
+
+        <script src="./lang.js"></script>
+        <script  src="./animating.js"></script>
+
+     
+    
+        
+        <!-- Initialize Swiper -->
+        <script>
+
+
+        
+            
+/*  
+        function show(value) {
+            document.querySelector(".text-box").value = value;
+        }
+          */
+        let dropdown = document.querySelector(".dropdown")
+        dropdown.onclick = function() {
+            dropdown.classList.toggle("active")
+        }
+      
+
+            $(function() {
+                $(".btn").click(function() {
+                    $(".form-signin").toggleClass("form-signin-left");
+                $(".form-signup").toggleClass("form-signup-left");
+               
+                $(".two_cycle").toggleClass("two_cycle_active");
+                $(".frame").toggleClass("frame-long");
+                $(".signup-inactive").toggleClass("signup-active");
+                $(".signin-active").toggleClass("signin-inactive");
+                $(".forgot").toggleClass("forgot-left");   
+                $(this).removeClass("idle").addClass("active");
+                });
+            });
+            
+            $(function() {
+                $(".btn-signup").click(function() {
+              $(".nav").toggleClass("nav-up");
+             $(".form-signup-left").toggleClass("form-signup-down");
+              $(".second_cycle").toggleClass("second_cycle_active");
+              $(".first_cycle").toggleClass("first_cycle_active");
+              $(".form-signup_contunie").toggleClass("form-signup_contunie__left");
+             // $(".success").toggleClass("success-left"); 
+            //  $(".frame").toggleClass("frame-short");
+                });
+            });
+            
+            $(function() {
+                $(".btn-signin").click(function() {
+              $(".btn-animate").toggleClass("btn-animate-grow");
+              $(".welcome").toggleClass("welcome-left");
+              $(".cover-photo").toggleClass("cover-photo-down");
+              $(".frame").toggleClass("frame-short");
+              $(".profile-photo").toggleClass("profile-photo-down");
+              $(".btn-goback").toggleClass("btn-goback-up");
+              $(".forgot").toggleClass("forgot-fade");
+                });
+            });
+          const slider1 = document.querySelector(".mySwiper");
+          const slider2 = document.querySelector(".mySwiper1");
+          const slider3 = document.querySelector(".mySwiper2");
+          const slider4 = document.querySelector('.token_sale_boxes');
+          const slider8 = document.querySelector('.colob_logos');
+   
+
+        
+
+
+
+          var swiper = new Swiper(slider1, {
+            slidesPerView: 2,
+            speed:500,
+            spaceBetween:1,
+            breakpoints: {
+
+
+                586:{
+                    slidesPerView: 3,
+                    spaceBetween:1,
+                },
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+           
+          });
+
+          var swiper1 = new Swiper(slider2, {
+        
+            speed:700,
+           breakpoints: {
+               320:{
+                slidesPerView: "auto",
+                        slidesPerGroup:1,
+                      
+                        speed:700,
+                       spaceBetween:30,
+               },
+                461:{
+                       slidesPerView: 2,
+                        slidesPerGroup:1,
+                      
+                        speed:700,
+                       spaceBetween:20,
+                },
+
+                1100:{
+                        slidesPerView: 2,
+                        slidesPerGroup:1,
+                        spaceBetween:90,
+                        speed:700,
+                }
+
+    
+
+              
+
+            },
+            
+            navigation: {
+              nextEl: ".swiper-button-next_1",
+              prevEl: ".swiper-button-prev_1",
+            },
+         
+    
+    
+          });
+
+          var swiper2 = new Swiper(slider3, {
+         
+            preloadImages:false,
+
+            lazy:{  
+                loadOnTransitionStart:false,
+   
+            },
+
+            watchSlidesProgress:true,
+            
+              breakpoints: {       
+                350:{
+                    slidesPerGroup:1,
+                    slidesPerView: 'auto',
+                    speed:500,
+                },
+
+                450:{
+                    slidesPerGroup:2,
+                    slidesPerView: 'auto',
+                    speed:500,
+                },
+
+           
+
+                1150:{
+                    slidesPerGroup:3,
+                    slidesPerView: 'auto',
+                    speed:500,
+                },
+
+            
+            },
+
+       
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+      
+        
+          });
+
+          var init1 = false;
+
+          function swiperCard1() {
+            if (window.innerWidth <= 1171){
+                if (!init1) {
+                    init1 = true;
+                    swiper9 = new Swiper(slider8, {
+                         spaceBetween:30,
+                            slidesPerView: "auto",
+                            slidesPerGroup:2,
+                            slideClass:'logos_of_comp',
+                            speed:1500,
+                            autoplay: {
+                                delay: 500,
+                            
+                                disableOnInteraction: false
+            },
+
+        
+                
+            
+          });
+                }
+            }
+            else if (init1) {
+                swiper9.destroy();
+                init1 = false;
+            }
+        
+          }
+
+          swiperCard1();
+
+            window.addEventListener("resize", swiperCard1);
+
+    
+
+
+            var init2 = false;
+
+        function swiperCard2() {
+            if (window.innerWidth <= 1920){
+                if (!init2) {
+                    init2 = true;
+                    swiper10 = new Swiper('.fonts_container', {
+                    
+                        slidesPerView: "auto",
+                        slidesPerGroup:2,
+                        speed:2500,
+                            autoplay: {
+                            delay: 500,                 
+                        disableOnInteraction: false
+                },
+            });
+          }
+        }
+         else if (init2) {
+            swiper10.destroy();
+            init2 = false;
+        }
+    }
+        swiperCard2();
+         window.addEventListener("resize", swiperCard2);
+
+
+
+
+    var init3 = false;
+
+    function swiperCard3() {
+         if (window.innerWidth <= 1920){
+         if (!init3) {
+            init2 = true;
+            swiper11 = new Swiper('.fonts_container_1', {
+               
+                slidesPerView: "auto",
+                slidesPerGroup:2,
+                speed:1500,
+                    autoplay: {
+                    delay:600,                 
+                disableOnInteraction: false
+              },
+            });
+        }
+    }
+     else if (init3) {
+     swiper11.destroy();
+     init3 = false;
+}
+}
+swiperCard3();
+ window.addEventListener("resize", swiperCard3);
+
+
+
+          var init = false;
+
+            function swiperCard() {
+            if (window.innerWidth <= 815) {
+                if (!init) {
+                init = true;
+                swiper = new Swiper(".token_sale_boxes", {
+
+                    slidesPerView: "auto",
+                    slideClass: 'token_info_box',
+                    speed:1000,
+                    spaceBetween: 30,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                 
+                });
+                
+                }
+            } else if (init) {
+                swiper.destroy();
+                init = false;
+            }
+            }
+            swiperCard();
+            window.addEventListener("resize", swiperCard);
+                    
+
+
+
+// Отображение количества токенов и цены на странице
+            const maxQuantity = 5; //Максимальное количество нфт которое можно купить
+            const minQuantity = 1; // Минимальное количество нфт которое можно купить
+            let costOneToken = 200;// Цена одного нфт
+
+
+            function rangeslider(value){
+                let col = document.getElementById('fader');
+                document.getElementById("output").innerHTML = parseInt(col.value);
+                document.getElementById("output").style.width =+ value + "";
+
+            }
+
+
+            function rangeslider2(value2){
+                let col = document.getElementById('faderr');
+                document.getElementById("outputt").innerHTML = parseInt(col.value);
+                document.getElementById("outputt").style.width =+ value2 + "";
+                    let el = value.target;
+                el.style.setProperty("--value", el.value);
+                el.style.setProperty("--min", el.min === "" ? "0" : el.min);
+                el.style.setProperty("--max", el.max === "" ? "100" : el.max);
+                el.style.setProperty("--value", el.value);
+
+
+            }
+
+
+
+            function rangeslidermob(value){
+            let col = document.getElementById('fader');
+            document.getElementById("output").innerHTML = parseInt(col.value);
+            document.getElementById("output").style.width =+ value + "";
+            let total = parseInt(col.value) * costOneToken;
+            document.getElementById('total').innerHTML = total  + ' BUSD + gas';
+            }
+
+            $(document).ready(function(){
+            $('.burger_moment').click(function(event) {
+            $('.burger_moment,.header__menu, body').toggleClass('active');
+            $('body').toggleClass('lock')
+            });
+        });
+
+        $('.burger_moment').on('click', function() {
+            $(this).toggleClass("burger_moment--opened");
+            $(this).toggleClass("burger_momentu--closed");
+         });
+
+        </script>
+
+
+    <style>
+        #outputt{
+            color: white;
+        }
+
+        #output{
+            color: white;
+        }
+    </style>
+</body>
+</html>

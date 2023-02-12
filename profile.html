@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./Styles/header.css">
+    <link rel="stylesheet" href="./Styles/profile.css">
+    <link rel="stylesheet" href="./Styles/form.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <div class="header_logos">
+                    <div class="xpad_logo">
+                        <a href="index.html" class="header__logo_xpad">
+                            <img class="xpad_logo_img" src="img/Group 1.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="logos_line">  </div>
+
+                    <div class="xpad_logo">
+                        <a href="index.html" class="header__logo_certik">
+                            <img src="img/Certik_logo.svg" alt="">
+                        </a>
+                    </div>
+
+           
+
+                </div>
+                           
+           
+                <div class="header__burger">
+                    <div class="buy_xpp_mobile">
+                        <a href="#" class="connect_Wallet lang" key="buy_xpp_header">Купить XPP</a>
+                    </div>
+                    <div class="burger_moment">
+                        <div class="bar bars"></div>
+     
+                        <div class="bar"></div>
+                    </div>
+                    
+                </div>
+                <nav class="header__menu ">
+                    <div class="header_menu__row">
+                        <ul class="header__list">
+                            <li style="list-style: none; margin-top: 0px;">
+                                <a href="stake.html" class="header__link">Stake</a>
+                            </li>
+                            <li>
+                                <a href="projects.html" class="header__link"> Whitepaper</a>
+                            </li>
+                            <li>
+                         
+                                <!--
+                                <div class="dropdown">
+                                    <input class="text-box" type="text" placeholder="RU" readonly>
+                                    <div class="options">
+                                      <div onclick="show('EN')" id="en" class="translate"  value="en" ><button >EN</button></div>
+                                      <div onclick="show('RU')" id="ru" class="translate"  value="ru"><button  >RU</button></div>
+                                    </div>
+                                </div>
+                               
+                            <button class="header_btn" data-btn="ru">RU</button>
+                                <button class="header_btn" data-btn="en">EN</button>
+                                  -->
+                            <div class="dropdown">
+                                <p class="inputsss lang" style="color: white;" key="header_btn_ru">RU</p>
+                                <div class="options">
+                                  <div onclick="show('RU')" id="ru" class="translate" >  <button  >RU</button></div>
+                                  <div onclick="show('EN')" id="en" class="translate" > <button  >EN</button></div>
+                                </div>
+                            
+                            </div>
+                      
+                           
+                                      
+                              
+                            </li>
+                    
+                        </ul>
+                        <div class="buttons">
+                            <div class="connect_walle_link">
+                                <a href="#" class="connect_Wallet lang" key="connect_header">Подключить кошелек</a>
+                            </div>
+                         
+                            <div class="buy_xpp">
+                                <a href="#" class="connect_Wallet lang"  key="buy_xpp_header">Купить XPP</a>
+        
+                            </div>
+
+                            <div class="account_link">
+                                <a href="#openModal" class="connect_Wallet">
+                                    <img src="img/account_logo_img.svg" alt="">
+                                </a>
+        
+                            </div>
+                           
+                        </div>
+                    </div>
+                 
+                </nav>
+
+            
+
+            </div>
+        </div>
+    </header>
+             
+    <div id="openModal" class="modal-design">
+        <div class="frame">
+            <a href="#" class="close-modal">x</a>
+            <div class="two_cycle">
+                <div class="first_cycle"></div>
+                <div class="second_cycle"></div>
+            </div>
+           <!-- <div class="nav">
+                <ul class"links">
+                  <li class="signin-active"><a class="btn">Sign in</a></li>
+                  <li class="signup-inactive"><a class="btn">Sign up </a></li>
+                </ul>
+              </div>
+              
+            -->
+            <div class="chacccked" ng-app ng-init="checked = false">
+                        <form class="form-signin" action="" method="get" name="form">
+                            <p class="vxod_header lang" key="vxod_login">Вход</p>
+                        <label for="username" class="lang" key="email_login">E-mail/Логин
+                        </label>
+                        <input class="form-styling" type="text" name="username" placeholder=""/>
+                        <label for="password" class="lang" key="password_login">Пароль
+                        </label>
+                        <input class="form-styling" type="password" name="password" placeholder=""/>
+                        <input type="checkbox" id="checkbox"/>
+    
+                        <div class="btn-animate">
+                            <a class="btn-signin lang" key="sign_in_login">Войти</a>
+                        </div>
+    
+                        <div class="or_">
+                            <p class="lang" key="or_login">или</p>
+                        </div>
+    
+                        <button class="button_sign_in_google">
+                            Google
+                        </button>
+    
+                        <li class="signup-inactive"><a class="btn lang" key="create_account_login">Создать аккаунт</a></li>
+                </form>
+                
+              <form class="form-signup" action="" method="get" name="form1">
+                  <p class="vxod_header lang" key="registration_login">Регистрация</p>
+                  <label for="fullname" class="lang" key="login_login">Логин
+                </label>
+                  <input class="form-styling" type="text" name="fullname" placeholder=""/>
+                  <label for="email" class="lang" key="enter_pasword">Введите пароль
+                </label>
+                  <input class="form-styling" type="text" name="email" placeholder=""/>
+                  <label for="password" class="lang" key="rewrite_password">Повторите пароль</label>
+                  <input class="form-styling" type="text" name="password" placeholder=""/>
+                
+        
+                  <a ng-click="checked = !checked" class="btn-signup lang" key="continue_login">Продолжить</a>
+                     <div class="or_">
+                            <p class="lang" key="or_login">или</p>
+                        </div>
+    
+                        <button class="button_sign_in_google">
+                            Google
+                        </button>
+                  <li class="signin-active"><a class="btn lang" key="sign_sign_up_login">Sign in</a></li>
+              </form>
+    
+    
+              <form action="" method="get" name="form1" class="form-signup_contunie">
+                <p class="vxod_header lang" key="upload_login">Загрузите фото</p>
+                <div class="upload_photo">
+                    <div class="upload_photo__row">
+                       <input type="file" id="file" accept="image/*">
+               
+                    </div>
+                    <label for="file" class="labelik">
+                        <div class="labe_img">
+                           <img src="img/Camera 1.svg">
+                        </div>
+                       
+                     </label>
+                
+                    </div>
+                <div class="buttons_and_refresh">
+                    <button class="sign_upp___ lang" key="sign_up__login">Зарегистрироваться</button>
+                    <div class="refresh_continue">
+                        <a  value="Refresh" onClick="history.go()" class="continue___ lang" key="continue_login__">Продолжить
+                        </a>
+                    </div>
+                   
+                </div>
+                            
+              </form>
+    
+              
+          
+              </div>
+        
+              
+              <div>
+             
+                <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
+              </div>
+            
+          </div>
+         
+       
+   
+
+</div>
+
+    <div id="openModal1" class="modal-design1">
+        <div class="referal_program">
+            <a href="#" class="close-modal1">x</a>
+
+            <p class="referal_program_header lang" key="referal_program">Реферальная программа</p>
+            <p class="referal_program_sub lang" key="reciver_money">Получайте 10$ за каждого приглашенного друга. Для получения вознагрождения необходимо, чтобы друг перешел по вашей 
+                реферальной ссылке и зарегистрировался на
+                 платформе Xpad.pro. При этом ваш тариф не должен быть ниже advanced</p>
+
+            <p class="my_referal_count lang" key="my_referals">Мои рефералы </p>
+            <p class="my_referal_count"></p>
+
+            <div class="referals">
+                <div class="referal_referal_box">
+                    <div class="referal_img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="referal_name_username">
+                        <p class="referal_name">Elisei P</p>
+                        <p class="referal_username">@user1</p>
+                    </div>
+                </div>
+
+                <div class="referal_referal_box">
+                    <div class="referal_img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="referal_name_username">
+                        <p class="referal_name">Vladimir RW</p>
+                        <p class="referal_username">@user2</p>
+                    </div>
+                </div>
+
+                <div class="referal_referal_box">
+                    <div class="referal_img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="referal_name_username">
+                        <p class="referal_name">Anna Ivanova</p>
+                        <p class="referal_username">@user3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="account_info">
+        <div class="container">
+            <div class="account_info__column">
+                <div class="account_name_cover_username">
+                    <div class="account_cover">
+                        <img src="img/coverimg_account.png" alt="">
+                    </div>
+                    <div class="name_and_exit">
+                        <p class="name_of_user">Rick Brooks</p>
+                        <button><img src="./img/logout.svg" alt=""></button>
+                    </div>
+
+                    <div class="username">
+                        <p>@user125683</p>
+                    </div>
+                </div>
+                <div class="account_info__row">
+                    <div class="info_statics">
+                          <p class="info_statics__header lang" key="obshi_balanc">Общий баланс</p>
+
+                          <div class="in_dollars">
+                              <p class="in_dollars_header">3 460 XPP</p>
+                              <p class="in_dollar_dollars_static">≈ 692$</p>
+                          </div>
+
+
+                          <div class="to_do">
+                              <img src="img/pereyti.svg" alt="">
+                              <a href="" class="to_do_text lang"  key="pereutsi_v_kashelok">Перейти в кошелек</a>
+                          </div>
+                    </div>
+
+                    <div class="info_statics">
+                        <p class="info_statics__header lang" key="my_stake">Мой stake</p>
+
+                        <div class="in_dollars">
+                            <p class="in_dollars_header">0 XPP</p>
+                            <p class="in_dollar_dollars_static">≈ 0$</p>
+                        </div>
+
+
+                        <div class="to_do">
+                            <img src="img/popolnits.svg" alt="">
+                            <a  href="stake.html" class="to_do_text lang"  key="papolnits_stake">Пополнить stake</a>
+                        </div>
+                  </div>
+
+                  <div class="info_statics referal_statics">
+                      <div class="my_referals__row">
+                        <p class="info_statics__header lang" key="myreferals">Мои рефералы</p>
+                        <a href="#openModal1"> 
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="referrans_pluse" d="M13 0.5C6.10488 0.5 0.5 6.10488 0.5 13C0.5 19.8951 6.10488 25.5 13 25.5C19.8951 25.5 25.5 19.8951 25.5 13C25.5 6.10488 19.8951 0.5 13 0.5ZM16.4545 14.0266H14.0266V16.4545C14.0266 17.0233 13.5549 17.495 12.9861 17.495C12.4173 17.495 11.9456 17.0233 11.9456 16.4545V14.0266H9.51776C8.94895 14.0266 8.47725 13.5549 8.47725 12.9861C8.47725 12.4173 8.94895 11.9456 9.51776 11.9456H11.9456V9.51776C11.9456 8.94895 12.4173 8.47725 12.9861 8.47725C13.5549 8.47725 14.0266 8.94895 14.0266 9.51776V11.9456H16.4545C17.0233 11.9456 17.495 12.4173 17.495 12.9861C17.495 13.5549 17.0233 14.0266 16.4545 14.0266Z" fill="#121212"/>
+                            </svg>
+                        </a>
+                      </div>
+                
+
+                    <div class="in_dollars">
+                        <p class="in_dollars_header">3</p>
+                        
+                    </div>
+
+
+                    <div class="to_do">
+                        <img src="img/myurls.svg" alt="">
+                        <a href="" class="to_do_text lang"  key="my_silka">Моя ссылка</a>
+                    </div>
+              </div>
+
+                </div>
+
+            </div>
+      
+        </div>
+    </div>
+
+
+
+  
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./lang.js"></script>
+    <script>
+    
+
+
+        $(document).ready(function(){
+            $('.burger_moment').click(function(event) {
+            $('.burger_moment,.header__menu, body').toggleClass('active');
+            $('body').toggleClass('lock')
+            });
+        });
+
+        $('.burger_moment').on('click', function() {
+            $(this).toggleClass("burger_moment--opened");
+            $(this).toggleClass("burger_momentu--closed");
+         });
+
+
+    </script>
+</body>
+</html>
